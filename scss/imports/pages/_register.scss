@@ -1,0 +1,13 @@
+.loginpage {
+    .containt__login {
+        max-width: 1140px;
+        margin-left: auto;
+        margin-right: auto;
+        padding: 40px 210px 80px;
+        border-bottom: 1px solid $gray-cl;
+        .login__des {
+            @include text(14px, $font-main, 15px, $text-cl, none);
+            margin-bottom: 16px;
+        }
+    }
+}

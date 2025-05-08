@@ -1,0 +1,340 @@
+// CSS HOMEPAGE
+.homepage {
+    max-width: $container-max-width;
+    padding-top: 0px !important;
+    // .container-fluid {
+    //     height: 100%;
+
+    .slider {
+        width: 100%;
+        height: 100%;
+        position: relative;
+
+        &__item-wrap {
+            width: 100%;
+            height: 100%;
+
+
+            .slider__item {
+                width: 100%;
+                height: 816px;
+                position: relative;
+
+                img {
+                    @include midimg(100%);
+                }
+
+                .slider__item-text {
+                    position: absolute;
+                    left: 60px;
+                    bottom: 40px;
+
+                    .slider__collection {
+                        @include text(14px, $font-main, 20px, $text-white-cl, uppercase);
+                    }
+
+                    .slider__collection-name {
+                        @include text(30px, $font-main, 42px, $text-white-cl, uppercase);
+                        margin: 8px 0 20px
+                    }
+
+                    .slider__discover {
+                        @include text(14px, $font-main, 20px, $text-white-cl, uppercase);
+                    }
+                }
+            }
+        }
+    }
+
+    .collection {
+        position: relative;
+
+        &::after {
+            content: "";
+            width: 100%;
+            height: 2px;
+            background-color: $gray-cl;
+            bottom: 1px;
+            left: 0;
+            display: inline-block;
+            position: absolute;
+        }
+
+        .container {
+            .collection__img {
+                width: 100%;
+
+                a {
+                    display: block;
+                    width: 100%;
+                    height: 1216.22px;
+                    position: relative;
+
+                    img {
+                        @include midimg(100%);
+                    }
+                }
+            }
+
+            .collection__description {
+                padding: 16px 0;
+
+                &-title {
+                    @include text(20px, $font-main, 28px, #000000, uppercase);
+                }
+
+                &-content {
+                    @include text(14px, $font-main, 20px, $text-cl, normal);
+                    margin: 8px 0 16px 0;
+                }
+
+                &-discover {
+                    a {
+                        @include text(14px, $font-main, 22px, $text-cl, uppercase);
+                    }
+                }
+            }
+
+            .collection__posters {
+                padding-top: 20px;
+                display: flex;
+                align-items: center;
+                gap: 20px;
+
+                .collection__poster {
+                    display: flex;
+                    flex-direction: column;
+                    justify-content: center;
+                    align-items: center;
+
+                    a {
+
+                        height: 1199.66px;
+
+                    }
+
+                    &-text {
+                        padding: 8px 0;
+                        @include text(16px, $font-main, 20px, $text-black-cl, uppercase);
+                    }
+                }
+            }
+        }
+
+    }
+
+    .products {
+        position: relative;
+
+        &::after {
+            content: "";
+            width: 100%;
+            height: 2px;
+            background-color: $gray-cl;
+            bottom: 1px;
+            left: 0;
+            display: inline-block;
+            position: absolute;
+        }
+
+        .container {
+            .product__wrapt {
+                .product__item {
+                    .product {
+                        padding: 12px 12px 16px;
+                        background-color: $gray-cl;
+
+                        &__img {
+                            width: 100%;
+
+                            a {
+
+                                display: block;
+
+                            }
+                        }
+
+                        &__status {
+                            @include text(14px, $font-main, 20px, $text-white-cl, uppercase);
+                            padding: 4px 12px;
+                            background-color: $black-bg-cl;
+                            display: inline-block;
+                            margin: 12px 0 16px;
+                        }
+
+                        &__category {
+                            a {
+                                @include text(24px, $font-main, 33px, $text-black-cl, uppercase);
+                                text-decoration: none;
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+
+    .trending {
+        .container {
+            .trending__wrapt {
+                .trending__item {
+                    &-img {
+                        width: 100%;
+
+                        a {
+                            display: block;
+                            width: 100%;
+                            height: 793px;
+                            position: relative;
+
+                            img {
+                                @include midimg(100%);
+                            }
+                        }
+                    }
+
+                    &-category {
+                        @include mid(true);
+                        padding: 8px 0;
+
+                        a {
+                            @include text(14px, $font-main, 22px, $text-black-cl, uppercase);
+                            text-decoration: none;
+                        }
+                    }
+                }
+
+                &:last-child {
+                    padding-top: 20px;
+                }
+            }
+
+        }
+    }
+
+    .outstanding {
+        position: relative;
+
+        &::after {
+            content: "";
+            width: 100%;
+            height: 2px;
+            background-color: $gray-cl;
+            bottom: 1px;
+            left: 0;
+            display: inline-block;
+            position: absolute;
+        }
+
+        .container {
+            .outstanding-wrapt {
+                padding-bottom: 20px;
+
+                &:last-child {
+                    padding-bottom: 0px;
+                }
+            }
+
+            .uotstanding__button {
+                @include mid(true);
+                margin-top: 4px;
+
+                & div {
+                    padding: 8px 16px;
+                    border: solid 1px $text-black-cl;
+                    display: flex;
+                    align-items: center;
+                    cursor: pointer;
+                    @include transition($t);
+                    .uotstanding__button-text {
+                        @include text(14px, $font-main, 17px, $text-black-cl, uppercase);
+                    }
+
+                    .uotstanding__button-img {
+                        img {
+                            @include mid(true);
+                        }
+                    }
+                    &:hover {
+                        background-color: $black-bg-cl;
+                        border: solid 1px $black-bg-cl;
+                        @include transition($t);
+                        .uotstanding__button-text {
+                            color: $text-white-cl;
+                        }
+    
+                    }
+                }
+            }
+        }
+    }
+
+    .store {
+        position: relative;
+
+        &::after {
+            content: "";
+            width: 100%;
+            height: 2px;
+            background-color: $gray-cl;
+            bottom: 1px;
+            left: 0;
+            display: inline-block;
+            position: absolute;
+        }
+
+        .container {
+            .store__wrapt {
+                display: flex;
+
+                .store__img {
+                    position: relative;
+                    width: 1235px;
+                    height: 695px;
+
+                    img {
+                        @include midimg(100%)
+                    }
+                }
+
+                .store__info {
+                    background-color: $gray-cl;
+                    padding: 24px 16px;
+                    flex-grow: 1;
+                    display: flex;
+                    flex-direction: column;
+                    justify-content: flex-end;
+
+                    .store__info-title {
+                        @include text(16px, $font-main, 22px, $text-black-cl, uppercase);
+                        padding: 0 8px;
+                        margin-bottom: 6px;
+                    }
+
+                    p {
+                        @include text(14px, $font-main, 22px, $text-black-cl, none);
+                        padding: 0 8px;
+                    }
+
+                    .store__info-button {
+                        @include text(14px, $font-main, 22px, $text-white-cl, uppercase);
+                        padding: 8px 16px;
+                        @include mid(true);
+                        background-color: $black-bg-cl;
+                        border: solid 1px $main-bg-cl;
+                        margin-top: 24px;
+                        @include transition($t);
+                        cursor: pointer;
+                        &:hover {
+                            background-color: $main-bg-cl;
+                            color: $text-black-cl;
+                            border: solid 1px $black-bg-cl;
+                            @include transition($t);
+
+                        }
+                    }
+                }
+            }
+        }
+    }
+}

@@ -1,0 +1,443 @@
+.accountpage {
+    .account__container {
+        width: 1220px;
+        margin-left: auto;
+        margin-right: auto;
+
+        .breadcrumbs {
+            position: relative;
+
+            &::after {
+                content: "";
+                width: 1915px;
+                height: 1px;
+                background-color: $gray-cl;
+                position: absolute;
+                top: 100%;
+                left: 50%;
+                @include transform(translateX(-50%));
+            }
+        }
+
+        .account {
+            display: flex;
+            gap: 40px;
+
+            .account__nav {
+                width: 340px;
+
+                .account__nav-item {
+                    width: 100%;
+                    border: 1px solid rgba(0, 0, 0, .09);
+                    margin-bottom: 24px;
+
+                    .account__nav-title {
+                        padding: 12px 8px;
+                        @include text(14px, $font-main, 22px, $text-cl, uppercase);
+                        border-bottom: 1px solid rgba(0, 0, 0, .09);
+
+                    }
+
+                    .nav-item {
+                        padding: 12px 8px 12px 32px;
+                        @include text(14px, $font-main, 22px, $text-cl, none);
+                        position: relative;
+                        cursor: pointer;
+                        @include transition($t);
+                        &:hover {
+                            background-color: #ededed;
+                            @include transition($t);
+                        }
+                        img {
+                            position: absolute;
+                            width: 16px;
+                            top:50%;
+                            @include transform(translateY(-50%));
+                            left: 8px;
+                        }
+                        &.active {
+                            margin-right: -1px;
+                            border-right: solid 2px $text-cl;
+                            background-color: #ededed;
+                            @include transition($t);
+                        }
+                    }
+                }
+
+                .white {
+                    margin: 0;
+                    width: 100%;
+                }
+            }
+
+            .account__panels {
+                flex: 1;
+
+                .account__panel {
+                    padding-bottom: 44px;
+
+                    &-title {
+                        @include text(22px, $font-main, 22px, $text-cl, uppercase);
+                        margin-bottom: 24px;
+                    }
+
+                    .newsletter {
+                        @include text(14px, $font-main, 17px, $text-cl, none);
+                        margin-bottom: 16px;
+                    }
+
+                    &-info {
+                        display: flex;
+                        gap: 28px;
+
+                        .info__item {
+                            flex: 1;
+                            border: 1px solid rgba(0, 0, 0, .09);
+
+                            &-title {
+                                border-bottom: 1px solid rgba(0, 0, 0, .09);
+                                @include text(16px, $font-main, 22px, $text-cl, uppercase);
+                                padding: 12px;
+                            }
+
+                            &-content {
+                                padding: 12px;
+
+                                .info__item-name {
+                                    @include text(16px, $font-main, 22px, $text-cl, none);
+                                    font-weight: bold;
+                                    margin-bottom: 8px;
+                                }
+
+                                .info__item-item {
+                                    @include text(16px, $font-main, 20px, $text-cl, none);
+                                    margin-bottom: 8px;
+                                    display: flex;
+                                    align-items: center;
+
+                                    img {
+                                        width: 20px;
+                                        margin-right: 10px;
+                                    }
+
+                                }
+
+                                .info__item-tool {
+                                    display: flex;
+                                    justify-content: space-between;
+                                    margin-top: 36px;
+                                    @include text(14px, $font-main, 20px, $text-cl, uppercase);
+                                    text-decoration: underline;
+
+                                    &.private {
+                                        margin-top: 56px;
+                                    }
+
+                                    .info__item-edit,
+                                    .info__item-password,
+                                    .info__item-list {
+                                        display: flex;
+                                        align-items: center;
+                                        gap: 4px;
+                                        cursor: pointer;
+                                    }
+                                }
+                            }
+
+                        }
+                    }
+
+
+                    .address__panel-list {
+                        .address__panel-top {
+                            display: flex;
+                            justify-content: space-between;
+                            align-items: center;
+                            margin-bottom: 24px;
+
+                            .account__panel-title {
+                                margin-bottom: 0px;
+                            }
+                        }
+
+                        .address__panel-main {
+                            padding: 16px;
+                            display: flex;
+                            border: solid 1px $gray-cl;
+                            gap: 16px;
+
+                            .address__content {
+                                .name__address {
+                                    display: flex;
+                                    margin-bottom: 8px;
+                                    align-items: center;
+                                    gap: 16px;
+
+                                    .name__address-text {
+                                        @include text(16px, $font-main, 22px, $text-cl, none);
+                                        font-weight: bold;
+                                    }
+
+                                    .address__default {
+                                        padding: 4px 8px;
+                                        @include text(14px, $font-main, 22px, #000000, none);
+                                        background-color: #eee;
+                                    }
+                                }
+
+                                .address__text {
+                                    @include text(16px, $font-main, 22px, #323232, none);
+                                }
+                            }
+
+                            .address__tool {
+                                display: flex;
+                                gap: 16px;
+
+                                .button__address-edit {
+                                    display: flex;
+                                    cursor: pointer;
+                                    gap: 8px;
+
+                                    img {
+                                        width: 20px;
+                                        height: 20px;
+                                    }
+
+                                    span {
+                                        @include text(14px, $font-main, 20px, #000000, uppercase);
+                                        text-decoration: underline;
+
+                                    }
+                                }
+
+                                .button__address-delete {
+                                    display: flex;
+                                    cursor: pointer;
+                                    gap: 8px;
+                                    position: relative;
+
+                                    img {
+                                        width: 20px;
+                                        height: 20px;
+                                        filter: brightness(0) invert(0.7);
+                                    }
+
+                                    span {
+                                        @include text(14px, $font-main, 20px, #BBB, uppercase);
+                                        text-decoration: underline;
+                                    }
+
+                                    .tooltip-text {
+                                        visibility: hidden;
+                                        width: 270px;
+                                        @include text(14px, $font-main, 16px, $text-cl, none);
+                                        border-radius: 2px;
+                                        text-decoration: none;
+                                        box-shadow: 0 1px 10px 0 rgba(0, 0, 0, .1);
+                                        padding: 12px 8px;
+                                        position: absolute;
+                                        background-color: $main-bg-cl;
+                                        z-index: 1;
+                                        top: 50%;
+                                        left: -200%;
+                                        margin-left: -60px;
+                                        opacity: 0;
+                                        @include transition($t);
+                                    }
+
+                                    &:hover .tooltip-text {
+                                        visibility: visible;
+                                        opacity: 1;
+                                        @include transition($t);
+                                    }
+                                }
+                            }
+                        }
+                    }
+
+                    .address__panel-add,
+                    .address__panel-edit {
+                        .account__panel-title {
+                            display: flex;
+                            align-items: center;
+                            gap: 12px;
+                        }
+                    }
+
+                    .endow__panel {
+                        .col-6 {
+                            padding-bottom: 20px;
+                        }
+
+                        .endow__item {
+                            padding: 12px;
+                            border: 1px solid $gray-cl;
+
+                            .endow__item-top {
+                                display: flex;
+                                justify-content: space-between;
+
+                                .endow__item-name {
+                                    display: flex;
+                                    gap: 16px;
+                                    align-items: center;
+
+                                    .endow__img {
+                                        width: 22px;
+                                    }
+
+                                    .endow__name {
+                                        @include text(14px, $font-main, 16px, $text-cl, uppercase);
+
+                                    }
+
+                                    .endow__coppy {
+                                        width: 14px;
+                                        height: 14px;
+                                        filter: brightness() invert(0.7);
+                                        cursor: pointer;
+                                    }
+                                }
+
+                                .endow__apply {
+                                    display: flex;
+                                    align-items: center;
+                                    gap: 4px;
+
+                                    .endow__text {
+                                        @include text(12px, $font-main, 16px, #999999, none);
+                                    }
+
+                                    .endow__value {
+                                        @include text(12px, $font-main, 16px, $text-cl, none);
+                                    }
+                                }
+                            }
+
+                            .endow__item-main {
+                                @include text(14px, $font-main, 20px, #000000, uppercase);
+                                padding: 20px 0;
+                            }
+
+                            .endow__item-bottom {
+                                display: flex;
+                                justify-content: space-between;
+
+                                .endow__expiry {
+                                    display: flex;
+                                    justify-content: space-between;
+                                    align-items: center;
+                                    gap: 4px;
+
+                                    .endow__text {
+                                        @include text(12px, $font-main, 16px, #999999, none);
+                                    }
+
+                                    .endow__value {
+                                        @include text(12px, $font-main, 16px, $text-cl, none);
+                                    }
+                                }
+
+                                .endow__clause {
+                                    @include text(12px, $font-main, 16px, $text-cl, none);
+                                    padding: 8px 0;
+                                    text-decoration: underline;
+                                    cursor: pointer;
+                                }
+                            }
+                        }
+                    }
+
+                    .order__panel {
+                        .col-6 {
+                            padding-bottom: 20px;
+
+                            .order__item {
+                                padding: 12px;
+                                border: 1px solid $gray-cl;
+
+                                .order__item-top {
+                                    display: flex;
+                                    justify-content: space-between;
+                                    @include text(12px, $font-main, 20px, $text-cl, uppercase);
+
+                                }
+
+                                .order__item-main {
+                                    @include text(12px, $font-main, 20px, $text-cl, uppercase);
+                                    padding-top: 16px;
+                                }
+                            }
+                        }
+                    }
+
+                    .odder__empty {
+                        display: flex;
+                        justify-content: center;
+                        align-items: center;
+                        flex-direction: column;
+                        gap: 12px;
+                        padding: 100px 0 12px;
+                        @include text(14px, $font-main, 20px, #BBBBBB, none);
+
+                        button {
+                            margin-top: 16px;
+                        }
+                    }
+
+                    .reviewer__empty {
+                        display: flex;
+                        justify-content: center;
+                        align-items: center;
+                        flex-direction: column;
+                        gap: 12px;
+                        padding: 70px 0;
+                        @include text(14px, $font-main, 20px, #BBBBBB, none);
+
+                        img {
+                            width: 64px;
+                            height: 64px;
+                        }
+                    }
+
+                    .wishlist__top {
+                        display: flex;
+                        justify-content: space-between;
+                        align-items: center;
+                        margin-bottom: 24px;
+
+                        .wishlist__quantity {
+                            @include text(16px, $font-main, 20px, #999999, none);
+
+                        }
+
+                        .wishlist__tools {
+                            display: flex;
+                            gap: 20px;
+                            @include text(12px, $font-main, 20px, $text-cl, none);
+                            align-items: center;
+                            .wishlist__tools-all {
+                                display: flex;
+                                align-items: center;
+                                gap: 8px;
+                                input {
+                                    appearance: auto;
+                                }
+
+                                label {
+                                    @include text(14px, $font-main, 17px, $text-cl, none);
+                                }
+                            }
+                            button {
+                                font-size: 12px;
+                                line-height: 15px;
+                            }
+                        }
+                    }
+                }
+
+            }
+        }
+    }
+}

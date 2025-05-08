@@ -1,0 +1,174 @@
+.productpage {
+    .product {
+        .container {
+            display: flex;
+            gap: 36px;
+
+            .product__filter {
+                width: 336px;
+                padding-top: 66px;
+
+                &-title {
+                    @include text(14px, $font-main, 16px, #000000, uppercase);
+                    margin-bottom: 16px;
+                }
+
+                &-items {
+                    @include customscroll();
+                    height: 412px;
+                    overflow: auto;
+
+                    .product__filter-list {
+                        li {
+                            position: relative;
+                            padding-left: 28px;
+
+                            .filter__item-close {
+                                display: inline-block;
+                                width: 16px;
+                                margin-right: 12px;
+                                bottom: 1px;
+                                left: 0;
+                                position: absolute;
+                                cursor: pointer;
+                            }
+
+                            .filter__item-name {
+                                @include text(12px, $font-main, 16px, #000000, uppercase);
+                                font-weight: bold;
+                                margin-right: 4px;
+                            }
+
+                            .filter__item-content {
+                                @include text(14px, $font-main, 16px, #000000, none);
+                            }
+                        }
+                    }
+
+                    .product__button-close {
+                        @include text(12px, $font-main, 22px, #000000, none);
+                        margin: 12px 0 16px;
+                        text-decoration: underline;
+                        cursor: pointer;
+                    }
+
+                    .product__accordion-filter {
+                        .accordion__item {
+                            &-title {
+                                padding: 12px 8px;
+                                @include text(14px, $font-main, 25px, $text-cl, uppercase);
+                                display: flex;
+                                justify-content: space-between;
+                                align-items: center;
+                                border-bottom: solid 1px $gray-cl;
+                                cursor: pointer;
+
+                                .accordion__item-icon {
+                                    width: 14px;
+                                    height: 2px;
+                                    background-color: $text-cl;
+                                    position: relative;
+
+                                    &::after {
+                                        content: "";
+                                        width: 14px;
+                                        height: 2px;
+                                        top: 0;
+                                        background-color: $text-cl;
+                                        position: absolute;
+                                        @include transform(rotate(90deg))
+                                    }
+                                }
+                            }
+
+                            &-panels {
+                                padding: 12px 8px;
+                                display: none;
+                                flex-direction: column;
+                                gap: 6px;
+
+                                .panle__item {
+                                    padding: 4px 8px;
+                                    @include text(14px, $font-main, 17px, $text-cl, none);
+                                    display: flex;
+                                    align-items: center;
+                                    gap: 12px;
+
+                                    input {
+                                        width: 14px;
+                                        height: 14px;
+                                        margin: 0px;
+                                        // border: solid 1px $text-cl;
+                                        padding-right: 12px;
+                                        appearance: auto;
+                                        cursor: pointer;
+                                    }
+
+                                    label {
+                                        cursor: pointer;
+                                        @include transition($t);
+
+                                        &:hover {
+                                            @include transition($t);
+                                            text-decoration: underline;
+                                        }
+                                    }
+                                }
+                            }
+                            &.active {
+                                .accordion__item-title {
+                                    .accordion__item-icon {
+                                        &::after {
+                                            display: none;
+                                        }
+                                    }
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+
+            .product__list {
+                flex: 1;
+
+                &-top {
+                    display: flex;
+                    justify-content: space-between;
+                    margin-bottom: 24px;
+
+                    .title {
+                        padding-top: 6px;
+                        margin-bottom: 0px;
+                    }
+
+                    .arrange {
+                        position: relative;
+
+                        &__title {
+                            @include text(14px, $font-main, 16px, #000000, none);
+
+                        }
+
+                        &__select {
+                            @include text(14px, $font-main, 16px, #000000, none);
+                            padding: 12px 40px 12px 12px;
+                            margin-left: 16px;
+                            border: solid 1px $gray-cl;
+                            background-color: $main-bg-cl;
+                            outline: none;
+                        }
+
+                        &__icon {
+                            position: absolute;
+                            right: 10px;
+                            top: 50%;
+                            @include transform(translateY(-50%));
+                            @include mid(true)
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
