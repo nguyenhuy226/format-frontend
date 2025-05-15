@@ -33,12 +33,20 @@
                             <button type="submit"><img src="images/search.png"></button>
                             <input type="text" placeholder="TÌM KIẾM">
                         </form>
+                        <div class="btn-menu-mobile">
+                            <li><a href="#"><img
+                                        src="images/menu_24dp_1F1F1F_FILL0_wght400_GRAD0_opsz24.png">menu</a></li>
+                        </div>
                         <div class="sub-menu">
                             <li><a href="./store.html"><img src="images/location.png">CỬA HÀNG</a></li>
                             <li><a href="account.html?tab=wishlist"><img src="images/favorite.png">
                                     SẢN PHẨM YÊU THÍCH</a></li>
                             <li class="sub-menu-cart"><a href="#"><img src="images/shopping.png">GIỎ HÀNG</a></li>
                             <li><a href="./account.html"><img src="images/person.png">TÀI KHOẢN</a></li>
+                        </div>
+                        <div class="sub-menu-mobile">
+                            <li class="sub-menu-search"><a href="#"><img src="images/search.png">tìm kiêm </a></li>
+                            <li class="sub-menu-cart"><a href="#"><img src="images/shopping.png">GIỎ HÀNG</a></li>
                         </div>
                     </div>
                     <div class="logo">
@@ -170,6 +178,7 @@
                     </div>
                 </div>
             </div>
+
         </div>
     </header>
     <main class="mainwrapper productdetailpage">
@@ -234,7 +243,7 @@
                                 <label for="quantity">sô lượng:</label>
                                 <div class="quantity__main">
                                     <div class="quantity-prev">-</div>
-                                    <input type="number" class="quantity" value="1" min="1" step="1">
+                                    <input type="number" class="quantity" value="1" min="1" step="1" disabled>
                                     <div class="quantity-next">+</div>
                                 </div>
                             </div>
@@ -441,33 +450,33 @@
         <section class="service pd">
             <div class="container">
                 <div class="service__wrapt row">
-                    <div class="service__item col-3">
+                    <div class="service__item col-6 col-xl-3">
                         <div class="service__item-img">
                             <img src="./images/service/homepage-service01.webp" alt="">
                         </div>
                         <p class="service__item-title">đặc quyền vip</p>
                         <p class="service__item-des">Tích điểm và nhận ưu đãi đến 35%</p>
                     </div>
-                    <div class="service__item col-3">
+                    <div class="service__item col-6 col-xl-3">
                         <div class="service__item-img">
                             <img src="./images/service/homepage-service02.webp" alt="">
                         </div>
-                        <p class="service__item-title">đặc quyền vip</p>
-                        <p class="service__item-des">Tích điểm và nhận ưu đãi đến 35%</p>
+                        <p class="service__item-title">CÁ NHÂN HÓA TRẢI NGHIỆM</p>
+                        <p class="service__item-des">Ghi dấu phong cách cùng Format</p>
                     </div>
-                    <div class="service__item col-3">
+                    <div class="service__item col-6 col-xl-3">
                         <div class="service__item-img">
                             <img src="./images/service/homepage-service03.webp" alt="">
                         </div>
-                        <p class="service__item-title">đặc quyền vip</p>
-                        <p class="service__item-des">Tích điểm và nhận ưu đãi đến 35%</p>
+                        <p class="service__item-title">BẢO HÀNH VÀ BẢO TRÌ</p>
+                        <p class="service__item-des">Bền đẹp cùng năm tháng</p>
                     </div>
-                    <div class="service__item col-3">
+                    <div class="service__item col-6 col-xl-3">
                         <div class="service__item-img">
                             <img src="./images/service/homepage-service04.webp" alt="">
                         </div>
-                        <p class="service__item-title">đặc quyền vip</p>
-                        <p class="service__item-des">Tích điểm và nhận ưu đãi đến 35%</p>
+                        <p class="service__item-title">VỪA VẶN NHƯ MAY ĐO RIÊNG</p>
+                        <p class="service__item-des">Cá nhân hóa đến từng chi tiết</p>
                     </div>
 
                 </div>
@@ -515,6 +524,8 @@
                         <div class="contact__item-qr">
                             <img src="./images/QR.webp" alt="">
                         </div>
+                        <button class="btn-dowloadapp">tải app ngay</button>
+
                     </div>
 
                 </div>
@@ -524,7 +535,7 @@
     <footer>
         <div class="container">
             <div class="footer__wrapt row">
-                <div class="footer__items col-3">
+                <div class="footer__items col-xl-3 col-12">
                     <div class="footer__item">
                         <h4 class="footer__item-title">công ty cổ phần staaar</h4>
                         <p>Tàng 6, sô 96 Thái Hà P. Trung Liệt, Q. Đống Đa, TP. Hà Nội</p>
@@ -543,7 +554,7 @@
                         <p>Email: contact@format.vn</p>
                     </div>
                 </div>
-                <div class="footer__items col-3">
+                <div class="footer__items col-xl-3 col-12">
                     <h4 class="footer__item-title">về format</h4>
                     <ul>
                         <li><a href="#">giới thiệu</a></li>
@@ -554,7 +565,7 @@
                         <li><a href="#">liên hệ</a></li>
                     </ul>
                 </div>
-                <div class="footer__items col-3">
+                <div class="footer__items col-xl-3 col-12">
                     <h4 class="footer__item-title">chính sách</h4>
                     <ul>
                         <li><a href="#">chính sách khách hàng</a></li>
@@ -567,7 +578,7 @@
                         <li><a href="#">chính sách bảo mật thông tin</a></li>
                     </ul>
                 </div>
-                <div class="footer__items col-3">
+                <div class="footer__items col-xl-3 col-12">
                     <div class="footer__item">
                         <h4 class="footer__item-title">chấp nhận thanh toán</h4>
                         <img src="./images/list-pay.webp" alt="list-pay">
@@ -900,9 +911,39 @@
                     <p class="money">4,612,000 đ</p>
                 </div>
                 <p class="des">* Ưu đãi có thể được áp dụng trong giỏ hàng</p>
-                <button class="cart">xem giỏ hàng</button>
+                <button class="full">xem giỏ hàng</button>
             </div>
         </div>
+    </div>
+    <div class="popup__menu-mobile">
+        <p class="menu__mobile-close">
+            <img src="images/close_24dp_1F1F1F_FILL0_wght400_GRAD0_opsz24.png" alt="close">
+        </p>
+        <ul class="popup__menu-main">
+            <li class="menu-item female"><a href="./product.html">NỮ</a></li>
+            <li class="menu-item male"><a href="./product.html">NAM</a></li>
+            <li class="menu-item"><a href="./collection.html">BỘ SƯU TẬP</a></li>
+            <li class="menu-item"><a href="./product.html">ƯU ĐÃI</a></li>
+            <li class="menu-item"><a href="/store.html">CỬA HÀNG</a></li>
+        </ul>
+     
+        <div class="popup__sub-menu">
+            <li><a href="./account.html"><img src="images/person.png">Tài khoản</a></li>
+            <li><a href="account.html?tab=wishlist"><img src="images/favorite.png">
+                    Sản phẩm yêu thích</a></li>
+            <li><a href="./store.html"><img src="images/location.png">Danh sách cửa hàng</a></li>
+            <li class="sub-menu-cart"><a href="#"><img src="images/shopping.png">Hỗ trợ khách hàng</a></li>
+        </div>
+    </div>
+    <div class="popup__search-mobile">
+        <div class="search__mobile-top">
+            <img class="search__mobile-close" src="images/close_24dp_1F1F1F_FILL0_wght400_GRAD0_opsz24.png" alt="close">
+            <p class="title-search">tìm kiếm</p>
+        </div>
+        <form class="search">
+            <button type="submit"><img src="images/search.png"></button>
+            <input type="text" placeholder="TÌM KIẾM">
+        </form>
     </div>
     <script type="text/javascript" src="dest/jsmain.min.js"></script>
     <script type="text/javascript" src="dest/main.js"></script>

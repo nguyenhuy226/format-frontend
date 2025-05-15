@@ -10,4 +10,9 @@
             margin-bottom: 16px;
         }
     }
+    @include xs {
+        .containt__login {
+            padding: 40px 10px 80px;
+        }
+    }
 }

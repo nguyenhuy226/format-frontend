@@ -5,9 +5,9 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
-    <title>Customer Login</title>
+    <title>Thanh toán</title>
     <link rel="icon" href="https://format.vn/media/favicon/stores/1/NmscbTd.png">
-    <meta name="title" content="Customer Login" />
+    <meta name="title" content="Thanh toán" />
     <meta name="description"
         content="Tinh tế và đẳng cấp - FirstClass by FORMAT chinh phục các quý cô bởi sự chỉn chu, sắc sảo không chỉ thể hiện bề ngoài mà còn ở từng đường nét mặt trong các thiết kế. " />
     <!-- meta facebook -->
@@ -23,359 +23,363 @@
 </head>
 
 <body>
-    <header>
-        <div class="container-fluid">
-            <div class="container">
-                <!-- <div class="row"> -->
-                <div class="top">
-                    <div class="top__tool">
-                        <form class="search">
-                            <button type="submit"><img src="images/search.png"></button>
-                            <input type="text" placeholder="TÌM KIẾM">
-                        </form>
-                        <div class="btn-menu-mobile">
-                            <li><a href="#"><img
-                                        src="images/menu_24dp_1F1F1F_FILL0_wght400_GRAD0_opsz24.png">menu</a></li>
+    <div class="header__payment">
+        <header>
+            <div class="container-fluid">
+                <div class="container">
+                    <!-- <div class="row"> -->
+                    <div class="top">
+                        <div class="top__tool">
+                            <form class="search">
+                                <button type="submit"><img src="images/search.png"></button>
+                                <input type="text" placeholder="TÌM KIẾM">
+                            </form>
+                            <div class="btn-menu-mobile">
+                                <li><a href="#"><img
+                                            src="images/menu_24dp_1F1F1F_FILL0_wght400_GRAD0_opsz24.png">menu</a></li>
+                            </div>
+                            <div class="sub-menu">
+                                <li><a href="./store.html"><img src="images/location.png">CỬA HÀNG</a></li>
+                                <li><a href="account.html?tab=wishlist"><img src="images/favorite.png">
+                                        SẢN PHẨM YÊU THÍCH</a></li>
+                                <li class="sub-menu-cart"><a href="#"><img src="images/shopping.png">GIỎ HÀNG</a></li>
+                                <li><a href="./account.html"><img src="images/person.png">TÀI KHOẢN</a></li>
+                            </div>
+                            <div class="sub-menu-mobile">
+                                <li class="sub-menu-search"><a href="#"><img src="images/search.png">tìm kiêm </a></li>
+                                <li class="sub-menu-cart"><a href="#"><img src="images/shopping.png">GIỎ HÀNG</a></li>
+                            </div>
                         </div>
-                        <div class="sub-menu">
-                            <li><a href="./store.html"><img src="images/location.png">CỬA HÀNG</a></li>
-                            <li><a href="account.html?tab=wishlist"><img src="images/favorite.png">
-                                    SẢN PHẨM YÊU THÍCH</a></li>
-                            <li class="sub-menu-cart"><a href="#"><img src="images/shopping.png">GIỎ HÀNG</a></li>
-                            <li><a href="./account.html"><img src="images/person.png">TÀI KHOẢN</a></li>
-                        </div>
-                        <div class="sub-menu-mobile">
-                            <li class="sub-menu-search"><a href="#"><img src="images/search.png">tìm kiêm </a></li>
-                            <li class="sub-menu-cart"><a href="#"><img src="images/shopping.png">GIỎ HÀNG</a></li>
+                        <div class="logo">
+                            <a href="/index.html">
+                                <img src="https://format.vn/media/logo/stores/1/logo-format-02.webp" alt="wooder">
+                                <h1 class="hidden">FORMAT</h1>
+                            </a>
                         </div>
                     </div>
-                    <div class="logo">
-                        <a href="/index.html">
-                            <img src="https://format.vn/media/logo/stores/1/logo-format-02.webp" alt="wooder">
-                            <h1 class="hidden">FORMAT</h1>
-                        </a>
-                    </div>
+                    <!-- </div> -->
                 </div>
-                <!-- </div> -->
-            </div>
-            <div class="bottom">
-                <ul class="menu">
-                    <li class="menu-item female"><a href="./product.html">NỮ</a></li>
-                    <li class="menu-item male"><a href="./product.html">NAM</a></li>
-                    <li class="menu-item"><a href="./collection.html">BỘ SƯU TẬP</a></li>
-                    <li class="menu-item"><a href="./product.html">ƯU ĐÃI</a></li>
-                    <li class="menu-item"><a href="/store.html">CỬA HÀNG</a></li>
-                </ul>
-                <div class="submenu-nu">
-                    <div class="row">
-                        <div class="submenu__item col-2">
-                            <div class="submenu__item-title">ĐẦM & VÁY</div>
-                            <ul>
-                                <li><a href="#slider">ĐẦM ƯU ĐÃI</a></li>
-                                <li><a href="#product">ĐẦM CAO CẤP</a></li>
-                                <li><a href="#videos">ĐẤM MỚI NHẤT</a></li>
-                                <li><a href="#about">ĐÀM BÁN CHẠY</a></li>
-                                <li><a href="#gallery">CHÂN VÁY</a></li>
-                            </ul>
-                        </div>
-                        <div class="submenu__item col-2">
-                            <div class="submenu__item-title">ÁO</div>
-                            <ul>
-                                <li><a href="#slider">ÁO SƠ MI</a></li>
-                                <li><a href="#product">ÁO KIỂU</a></li>
-                                <li><a href="#videos">ÁO KÝ GIẢ </a></li>
-                                <li><a href="#about">ĐÀM THUN & POLO</a></li>
-                                <li><a href="#gallery">ÁO GHI LÊ</a></li>
-                                <li><a href="#gallery">ÁO LEN & CHUI ĐẦU</a></li>
-                                <li><a href="#gallery">ÁO GIỮ NHIỆT WARMMAX</a></li>
-                            </ul>
-                        </div>
-                        <div class="submenu__item col-2">
-                            <div class="submenu__item-title">ÁO KHOÁC</div>
-                            <ul>
-                                <li><a href="#slider">ÁO CHỐNG NẮNG</a></li>
-                                <li><a href="#product">ÁO VEST</a></li>
-                                <li><a href="#videos">BLAZER</a></li>
-                                <li><a href="#about">ÁO LÔNG VŨ</a></li>
-                                <li><a href="#gallery">ÁO MĂNG TÔ</a></li>
-                                <li><a href="#gallery">ÁO KHOÁC KHÁC</a></li>
-                            </ul>
-                        </div>
+                <div class="bottom">
+                    <ul class="menu">
+                        <li class="menu-item female"><a href="./product.html">NỮ</a></li>
+                        <li class="menu-item male"><a href="./product.html">NAM</a></li>
+                        <li class="menu-item"><a href="./collection.html">BỘ SƯU TẬP</a></li>
+                        <li class="menu-item"><a href="./product.html">ƯU ĐÃI</a></li>
+                        <li class="menu-item"><a href="/store.html">CỬA HÀNG</a></li>
+                    </ul>
+                    <div class="submenu-nu">
+                        <div class="row">
+                            <div class="submenu__item col-2">
+                                <div class="submenu__item-title">ĐẦM & VÁY</div>
+                                <ul>
+                                    <li><a href="#slider">ĐẦM ƯU ĐÃI</a></li>
+                                    <li><a href="#product">ĐẦM CAO CẤP</a></li>
+                                    <li><a href="#videos">ĐẤM MỚI NHẤT</a></li>
+                                    <li><a href="#about">ĐÀM BÁN CHẠY</a></li>
+                                    <li><a href="#gallery">CHÂN VÁY</a></li>
+                                </ul>
+                            </div>
+                            <div class="submenu__item col-2">
+                                <div class="submenu__item-title">ÁO</div>
+                                <ul>
+                                    <li><a href="#slider">ÁO SƠ MI</a></li>
+                                    <li><a href="#product">ÁO KIỂU</a></li>
+                                    <li><a href="#videos">ÁO KÝ GIẢ </a></li>
+                                    <li><a href="#about">ĐÀM THUN & POLO</a></li>
+                                    <li><a href="#gallery">ÁO GHI LÊ</a></li>
+                                    <li><a href="#gallery">ÁO LEN & CHUI ĐẦU</a></li>
+                                    <li><a href="#gallery">ÁO GIỮ NHIỆT WARMMAX</a></li>
+                                </ul>
+                            </div>
+                            <div class="submenu__item col-2">
+                                <div class="submenu__item-title">ÁO KHOÁC</div>
+                                <ul>
+                                    <li><a href="#slider">ÁO CHỐNG NẮNG</a></li>
+                                    <li><a href="#product">ÁO VEST</a></li>
+                                    <li><a href="#videos">BLAZER</a></li>
+                                    <li><a href="#about">ÁO LÔNG VŨ</a></li>
+                                    <li><a href="#gallery">ÁO MĂNG TÔ</a></li>
+                                    <li><a href="#gallery">ÁO KHOÁC KHÁC</a></li>
+                                </ul>
+                            </div>
 
-                        <div class="submenu__item col-2">
-                            <div class="submenu__item-title">ÁO DÀI</div>
-                            <ul>
-                                <li><a href="#slider">XUÂN CA</a></li>
-                                <li><a href="#product">NGỌC HOA</a></li>
-                                <li><a href="#videos">THIÊN SẮC</a></li>
-                                <li><a href="#about">NAM DU</a></li>
-                                <li><a href="#gallery">NHÃ LIÊN</a></li>
-                                <li><a href="#gallery">QUẦN ÁO DÀI</a></li>
-                            </ul>
+                            <div class="submenu__item col-2">
+                                <div class="submenu__item-title">ÁO DÀI</div>
+                                <ul>
+                                    <li><a href="#slider">XUÂN CA</a></li>
+                                    <li><a href="#product">NGỌC HOA</a></li>
+                                    <li><a href="#videos">THIÊN SẮC</a></li>
+                                    <li><a href="#about">NAM DU</a></li>
+                                    <li><a href="#gallery">NHÃ LIÊN</a></li>
+                                    <li><a href="#gallery">QUẦN ÁO DÀI</a></li>
+                                </ul>
+                            </div>
+                            <div class="submenu__item col-2">
+                                <div class="submenu__item-title">QUẦN & SET ĐỒ</div>
+                                <ul>
+                                    <li><a href="#slider">QUẦN KIỂU</a></li>
+                                    <li><a href="#product">QUẦN ÂU</a></li>
+                                    <li><a href="#videos">QUẦN JEAN</a></li>
+                                    <li><a href="#about">QUẦN SHORT</a></li>
+                                    <li><a href="#gallery">SET ĐỒ</a></li>
+                                </ul>
+                            </div>
+                            <div class="submenu__item col-2">
+                                <div class="submenu__item-title">PHỤ KIỆN</div>
+                                <ul>
+                                    <li><a href="#slider">GIÀY DÉP</a></li>
+                                    <li><a href="#product">TÚI, VÍ, THẮT LƯNG</a></li>
+                                    <li><a href="#videos">TẤT, GĂNG TAY, KHẨU TRANG</a></li>
+                                    <li><a href="#about">KHĂN</a></li>
+                                    <li><a href="#gallery">QUẦN TẤT</a></li>
+                                    <li><a href="#gallery">ĐỒ LÓT</a></li>
+                                    <li><a href="#gallery">NƯỚC HOA</a></li>
+                                </ul>
+                            </div>
                         </div>
-                        <div class="submenu__item col-2">
-                            <div class="submenu__item-title">QUẦN & SET ĐỒ</div>
-                            <ul>
-                                <li><a href="#slider">QUẦN KIỂU</a></li>
-                                <li><a href="#product">QUẦN ÂU</a></li>
-                                <li><a href="#videos">QUẦN JEAN</a></li>
-                                <li><a href="#about">QUẦN SHORT</a></li>
-                                <li><a href="#gallery">SET ĐỒ</a></li>
-                            </ul>
-                        </div>
-                        <div class="submenu__item col-2">
-                            <div class="submenu__item-title">PHỤ KIỆN</div>
-                            <ul>
-                                <li><a href="#slider">GIÀY DÉP</a></li>
-                                <li><a href="#product">TÚI, VÍ, THẮT LƯNG</a></li>
-                                <li><a href="#videos">TẤT, GĂNG TAY, KHẨU TRANG</a></li>
-                                <li><a href="#about">KHĂN</a></li>
-                                <li><a href="#gallery">QUẦN TẤT</a></li>
-                                <li><a href="#gallery">ĐỒ LÓT</a></li>
-                                <li><a href="#gallery">NƯỚC HOA</a></li>
-                            </ul>
+                    </div>
+                    <div class="submenu-nam">
+                        <div class="row">
+                            <div class="submenu__item col-2">
+                                <div class="submenu__item-title">ÁO</div>
+                                <ul>
+                                    <li><a href="#slider">ÁO SƠ MI</a></li>
+                                    <li><a href="#product">ÁO POLO</a></li>
+                                    <li><a href="#videos">ÁO VEST</a></li>
+                                    <li><a href="#about">ÁO THUN</a></li>
+                                    <li><a href="#gallery">ÁO GIỮ NHIỆT</a></li>
+                                </ul>
+                            </div>
+                            <div class="submenu__item col-2">
+                                <div class="submenu__item-title">ÁO KHOÁC</div>
+                                <ul>
+                                    <li><a href="#slider">ÁO CHỐNG NẮNG</a></li>
+                                    <li><a href="#product">ÁO KHOÁC DA</a></li>
+                                    <li><a href="#videos">ÁO LÔNG VŨ</a></li>
+                                    <li><a href="#about">ĐÀM MĂNG TÔ</a></li>
+                                    <li><a href="#gallery">ÁO KHOÁC KHÁC</a></li>
+                                </ul>
+                            </div>
+                            <div class="submenu__item col-2">
+                                <div class="submenu__item-title">QUẦN</div>
+                                <ul>
+                                    <li><a href="#slider">QUẦN ÂU</a></li>
+                                    <li><a href="#product">QUẦN KAKI</a></li>
+                                    <li><a href="#videos">QUẦN SHORT</a></li>
+                                </ul>
+                            </div>
+                            <div class="submenu__item col-2">
+                                <div class="submenu__item-title">PHỤ KIỆN</div>
+                                <ul>
+                                    <li><a href="#slider">GIÀY DÉP</a></li>
+                                    <li><a href="#product">CẶP, TÚI, VÍ, THẮT LƯNG</a></li>
+                                    <li><a href="#gallery">ĐỒ LÓT</a></li>
+                                </ul>
+                            </div>
                         </div>
                     </div>
                 </div>
-                <div class="submenu-nam">
-                    <div class="row">
-                        <div class="submenu__item col-2">
-                            <div class="submenu__item-title">ÁO</div>
-                            <ul>
-                                <li><a href="#slider">ÁO SƠ MI</a></li>
-                                <li><a href="#product">ÁO POLO</a></li>
-                                <li><a href="#videos">ÁO VEST</a></li>
-                                <li><a href="#about">ÁO THUN</a></li>
-                                <li><a href="#gallery">ÁO GIỮ NHIỆT</a></li>
-                            </ul>
+
+            </div>
+        </header>
+    </div>
+    <main class="shippingpage">
+        <div class="shipping__container">
+            <div class="shipping__progress">
+                <div class="shipping__progress-item active">
+                    <div class="progress__number">
+                        1
+                    </div>
+                    <p class="progress__text">thông tin nhận hàng</p>
+                </div>
+                <div class="shipping__progress-item">
+                    <div class="progress__number">
+                        2
+                    </div>
+                    <p class="progress__text">thanh toán</p>
+                </div>
+            </div>
+            <div class="shipping row">
+                <div class="shipping__left col-xl-8">
+                    <div class="shipping__receive">
+                        <p class="receive__title">thông tin nhận hàng</p>
+                        <p class="receive__title-sub">Hình thức nhận hàng</p>
+                        <div class="receive__method">
+                            <div class="receive__home">
+                                <div class="receive__home-dot">
+                                    <div class="dot"></div>
+                                </div>
+                                <div class="receive__home-text">
+                                    <p class="receive-main">nhận tại nhà</p>
+                                    <p class="receive-sub">Thời gian giao hàng dự kiến từ 3-5 ngày</p>
+                                </div>
+                            </div>
+                            <div class="receive__store">
+                                <div class="receive__store-dot"></div>
+                                <div class="receive__store-text">
+                                    <p class="receive-main">nhận tại cửa hàng</p>
+                                    <p class="receive-sub">Miễn phí nhận hàng tại hệ thống cửa hàng FORMAT</p>
+                                </div>
+                            </div>
                         </div>
-                        <div class="submenu__item col-2">
-                            <div class="submenu__item-title">ÁO KHOÁC</div>
-                            <ul>
-                                <li><a href="#slider">ÁO CHỐNG NẮNG</a></li>
-                                <li><a href="#product">ÁO KHOÁC DA</a></li>
-                                <li><a href="#videos">ÁO LÔNG VŨ</a></li>
-                                <li><a href="#about">ĐÀM MĂNG TÔ</a></li>
-                                <li><a href="#gallery">ÁO KHOÁC KHÁC</a></li>
-                            </ul>
+                        <p class="receive__title-sub">Địa chỉ nhận hàng</p>
+                        <div class="receive__address">
+                            <div class="receive__ddress-item">
+                                <div class="receive__ddress-border">
+                                    <div class="receive__address-dot">
+                                        <div class="dot"></div>
+                                    </div>
+                                    <div class="receive__address-text">
+                                        <p class="receive__address-main">nguyễn hữu huy - 036389040 <span
+                                                class="address-default">Mặc định</span></p>
+                                        <p class="receive__address-sub">581/79 trường chinh, Phường Tân Sơn NHì, Quận
+                                            Tân Phú, Thành Phố Hồ Chí Minh</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="receive__ddress-item">
+                                <div class="receive__ddress-border">
+                                    <div class="receive__address-dot">
+                                        <div class="dot"></div>
+                                    </div>
+                                    <div class="receive__address-text">
+                                        <p class="receive__address-main">nguyễn hữu huy - 036389040 <span
+                                                class="address-default">Mặc định</span></p>
+                                        <p class="receive__address-sub">581/79 trường chinh, Phường Tân Sơn NHì, Quận
+                                            Tân Phú, Thành Phố Hồ Chí Minh</p>
+                                    </div>
+                                </div>
+                            </div>
                         </div>
-                        <div class="submenu__item col-2">
-                            <div class="submenu__item-title">QUẦN</div>
-                            <ul>
-                                <li><a href="#slider">QUẦN ÂU</a></li>
-                                <li><a href="#product">QUẦN KAKI</a></li>
-                                <li><a href="#videos">QUẦN SHORT</a></li>
-                            </ul>
+                        <p class="note-text">Ghi chú</p>
+                        <input class="note-input" type="text" placeholder="Nhập ghi chú của Quý khách">
+                    </div>
+                    <div class="shipping__transport">
+                        <p class="transport__title">thông tin nhận hàng</p>
+                        <p class="transport__title-sub">Hình thức nhận hàng</p>
+
+                        <div class="transport__method">
+                            <div class="transport__item">
+                                <div class="transport__item-dot">
+                                    <div class="dot"></div>
+                                </div>
+                                <div class="transport__item-text">
+                                    <p class="transport-main">nhận tại nhà</p>
+                                    <p class="transport-sub">Thời gian giao hàng dự kiến từ 3-5 ngày</p>
+                                </div>
+                            </div>
                         </div>
-                        <div class="submenu__item col-2">
-                            <div class="submenu__item-title">PHỤ KIỆN</div>
-                            <ul>
-                                <li><a href="#slider">GIÀY DÉP</a></li>
-                                <li><a href="#product">CẶP, TÚI, VÍ, THẮT LƯNG</a></li>
-                                <li><a href="#gallery">ĐỒ LÓT</a></li>
-                            </ul>
+                    </div>
+                    <button>tiếp tục</button>
+                </div>
+                <div class="shipping__right col-xl-4">
+                    <div class="cart__calculate">
+                        <p class="cart__calculate-title">tạm tính</p>
+                        <div class="cart__calculate-provisional">
+                            <p class="provisional">Tạm tính (6 sản phẩm)</p>
+                            <p class="money">4,612,000 đ</p>
+                        </div>
+                        <div class="cart__calculate-discount">
+                            <p class="discount">Tổng giảm giá</p>
+                            <p class="money">- 612,000 đ</p>
+                        </div>
+                        <div class="cart__calculate-discount">
+                            <p class="discount">Vận chuyển</p>
+                            <p class="money">- 0 đ</p>
+                        </div>
+                        <div class="cart__calculate-total">
+                            <p class="total">Tổng thanh toán</p>
+                            <p class="money">4,612,000 đ</p>
+                        </div>
+                        <p class="des">* Đã bao gồm VAT</p>
+                        <button class="full">thanh toán ngay</button>
+                    </div>
+                    <div class="shipping__product-list">
+                        <p class="shipping__product-title">danh sách sản phẩm</p>
+                        <div class="cart__items">
+                            <div class="cart__item">
+                                <div class="cart__item-img">
+                                    <img src="images/10004190_b939-212q_v_ng_nh_t_1290__10004188_b917-908q_n_u_1490_3.jpg"
+                                        alt="cart">
+                                </div>
+                                <div class="cart__item-text">
+                                    <p class="cart__item-name">áo sơ mi dáng vừa</p>
+                                    <p class="cart__item-sku">SKU: 2100041900081</p>
+                                    <p class="cart__item-info">
+                                        <span class="info-item">màu sắc : xanh lá</span>
+                                        <span class="info-item">kích cỡ: size xl</span>
+                                    </p>
+                                    <span class="quantity">SL: 1</span>
+                                    <p class="total-number">
+                                        387.000 đ
+                                    <p>
+                                </div>
+                                <div class="cart__item-total">
+                                    <p class="total-number">
+                                        387.000 đ
+                                    <p>
+                                </div>
+                            </div>
+                            <div class="cart__item">
+                                <div class="cart__item-img">
+                                    <img src="images/10004190_b939-212q_v_ng_nh_t_1290__10004188_b917-908q_n_u_1490_3.jpg"
+                                        alt="cart">
+                                </div>
+                                <div class="cart__item-text">
+                                    <p class="cart__item-name">áo sơ mi dáng vừa</p>
+                                    <p class="cart__item-sku">SKU: 2100041900081</p>
+                                    <p class="cart__item-info">
+                                        <span class="info-item">màu sắc : xanh lá</span>
+                                        <span class="info-item">kích cỡ: size xl</span>
+                                    </p>
+                                    <span class="quantity">SL: 1</span>
+                                    <p class="total-number">
+                                        387.000 đ
+                                    <p>
+                                </div>
+                                <div class="cart__item-total">
+                                    <p class="total-number">
+                                        387.000 đ
+                                    <p>
+                                </div>
+                            </div>
+                            <div class="cart__item">
+                                <div class="cart__item-img">
+                                    <img src="images/10004190_b939-212q_v_ng_nh_t_1290__10004188_b917-908q_n_u_1490_3.jpg"
+                                        alt="cart">
+                                </div>
+                                <div class="cart__item-text">
+                                    <p class="cart__item-name">áo sơ mi dáng vừa</p>
+                                    <p class="cart__item-sku">SKU: 2100041900081</p>
+                                    <p class="cart__item-info">
+                                        <span class="info-item">màu sắc : xanh lá</span>
+                                        <span class="info-item">kích cỡ: size xl</span>
+                                    </p>
+                                    <span class="quantity">SL: 1</span>
+                                    <p class="total-number">
+                                        387.000 đ
+                                    <p>
+                                </div>
+                                <div class="cart__item-total">
+                                    <p class="total-number">
+                                        387.000 đ
+                                    <p>
+                                </div>
+                            </div>
                         </div>
                     </div>
                 </div>
             </div>
-
         </div>
-    </header>
-    <main class="mainwrapper loginpage">
-        <section class="containt__login">
-            <h2 class="title">đăng nhập</h2>
-            <p class="login__des">Vui lòng nhập thông tin và tận hưởng trải nghiệm cá nhân hóa cùng Format</p>
-            <form class="account__form">
-                <div class="form-group">
-                    <label for="email">Email / Số điện thoại *</label>
-                    <input type="text" id="email" name="email" placeholder="Nhập email hoặc số điện thoại của Quý khách">
-                </div>
-                <div class="form-group password">
-                    <label for="password">Mật khẩu *</label>
-                    <input type="password" id="password" name="password">
-                    <span class="toggle-password active">👁️</span>
-                </div>
-                <div class="form-check">
-                    <input type="checkbox" name="isremember" id="isremember">
-                    <label for="isremember">Nhớ thông tin đăng nhập của tôi</label>
-                </div>
-                <div class="form-tools">
-                    <div class="form__register">
-                        <p class="form__register-text">Quý khách chưa có tài khoản?</p>
-                        <a href="./register.html" class="form__register-link">Đăng ký</a>
-                    </div>
-                    <div class="form__forgot">
-                        <a href="./forgot-password.html" class="form__forgot-link">Quên mật khẩu</a>
-                    </div>
-                </div>
-                <button class="full">đăng nhập</button>
-
-            </form>
-        </section>
-        <section class="service pd">
-            <div class="container">
-                <div class="service__wrapt row">
-                    <div class="service__item col-6 col-xl-3">
-                        <div class="service__item-img">
-                            <img src="./images/service/homepage-service01.webp" alt="">
-                        </div>
-                        <p class="service__item-title">đặc quyền vip</p>
-                        <p class="service__item-des">Tích điểm và nhận ưu đãi đến 35%</p>
-                    </div>
-                    <div class="service__item col-6 col-xl-3">
-                        <div class="service__item-img">
-                            <img src="./images/service/homepage-service02.webp" alt="">
-                        </div>
-                        <p class="service__item-title">CÁ NHÂN HÓA TRẢI NGHIỆM</p>
-                        <p class="service__item-des">Ghi dấu phong cách cùng Format</p>
-                    </div>
-                    <div class="service__item col-6 col-xl-3">
-                        <div class="service__item-img">
-                            <img src="./images/service/homepage-service03.webp" alt="">
-                        </div>
-                        <p class="service__item-title">BẢO HÀNH VÀ BẢO TRÌ</p>
-                        <p class="service__item-des">Bền đẹp cùng năm tháng</p>
-                    </div>
-                    <div class="service__item col-6 col-xl-3">
-                        <div class="service__item-img">
-                            <img src="./images/service/homepage-service04.webp" alt="">
-                        </div>
-                        <p class="service__item-title">VỪA VẶN NHƯ MAY ĐO RIÊNG</p>
-                        <p class="service__item-des">Cá nhân hóa đến từng chi tiết</p>
-                    </div>
-
-                </div>
-            </div>
-        </section>
-        <section class="contact pd">
-            <div class="container">
-                <div class="contact__wrapt">
-                    <div class="contact__item">
-                        <p class="contact__item-title">đăng ký nhận thông tin
-                        </p>
-                        <p class="contact__item-des">Đăng ký nhận thông tin qua email để nhận được tin tức từ những bộ
-                            sưu tập và sản phẩm mới nhất.</p>
-                        <form>
-                            <div class="form-group">
-                                <label class="label">Đối tượng *</label>
-                                <div>
-                                    <input type="radio" id="male" name="gender" value="male" hidden>
-                                    <label for="male">Nam</label>
-                                </div>
-                                <div>
-                                    <input type="radio" id="female" name="gender" value="female" hidden>
-                                    <label for="female">Nữ</label>
-                                </div>
-                                <div>
-                                    <input type="radio" id="unisex" name="gender" value="unisex" hidden>
-                                    <label for="unisex">Unisex</label>
-                                </div>
-                            </div>
-                            <div class="form-group">
-                                <label class="label">Email *</label>
-                                <div class="email">
-                                    <p><img src="images/mail_24dp_1F1F1F_FILL0_wght400_GRAD0_opsz24.png"></p>
-                                    <input class="input-email" type="text" id="email" name="email" value=""
-                                        placeholder="Nhập Email của quý khách">
-                                </div>
-                            </div>
-                            <button>xác nhận</button>
-                        </form>
-                    </div>
-                    <div class="contact__item">
-                        <p class="contact__item-title">ưu đãi độc quyền trên app
-                        </p>
-                        <p class="contact__item-des">Cập nhật các chương trình khuyến mãi một cách nhanh nhất</p>
-                        <div class="contact__item-qr">
-                            <img src="./images/QR.webp" alt="">
-                        </div>
-                        <button class="btn-dowloadapp">tải app ngay</button>
-
-                    </div>
-
-                </div>
-            </div>
-        </section>
+        </div>
     </main>
-    <footer>
-        <div class="container">
-            <div class="footer__wrapt row">
-                <div class="footer__items col-xl-3 col-12">
-                    <div class="footer__item">
-                        <h4 class="footer__item-title">công ty cổ phần staaar</h4>
-                        <p>Tàng 6, sô 96 Thái Hà P. Trung Liệt, Q. Đống Đa, TP. Hà Nội</p>
-                        <p>Mã số thuế: 0109749326</p>
-                        <p>Ngày cấp ĐKKD 29/02/2021</p>
-                        <p>Nơi cấp: Sở kế hoạch và đầu từ Hà Nội</p>
-                    </div>
-                    <div class="footer__item">
-                        <h4 class="footer__item-title">dịch vụ khách hàng</h4>
-                        <p>Hotline: 1800 6163</p>
-                        <p>Email: cskh@format.vn</p>
-                    </div>
-                    <div class="footer__item">
-                        <h4 class="footer__item-title">hỗ trợ mua hàng online</h4>
-                        <p>Hotline: 0247 306 2882</p>
-                        <p>Email: contact@format.vn</p>
-                    </div>
-                </div>
-                <div class="footer__items col-xl-3 col-12">
-                    <h4 class="footer__item-title">về format</h4>
-                    <ul>
-                        <li><a href="#">giới thiệu</a></li>
-                        <li><a href="#">hướng dẫn mua hàng</a></li>
-                        <li><a href="#">hướng dẫn chọn size</a></li>
-                        <li><a href="#">hướng dẫn thanh toán</a></li>
-                        <li><a href="#">tra cứu đơn hàng</a></li>
-                        <li><a href="#">liên hệ</a></li>
-                    </ul>
-                </div>
-                <div class="footer__items col-xl-3 col-12">
-                    <h4 class="footer__item-title">chính sách</h4>
-                    <ul>
-                        <li><a href="#">chính sách khách hàng</a></li>
-                        <li><a href="#">chính sách thanh toán</a></li>
-                        <li><a href="#">chính sách vận chuyển</a></li>
-                        <li><a href="#">chính sách đổi trả</a></li>
-                        <li><a href="#">chính sách xử lý khiếu nại</a></li>
-                        <li><a href="#">chính sách bảo hành</a></li>
-                        <li><a href="#">diều khoản sử dụng</a></li>
-                        <li><a href="#">chính sách bảo mật thông tin</a></li>
-                    </ul>
-                </div>
-                <div class="footer__items col-xl-3 col-12">
-                    <div class="footer__item">
-                        <h4 class="footer__item-title">chấp nhận thanh toán</h4>
-                        <img src="./images/list-pay.webp" alt="list-pay">
-                    </div>
-                    <div class="footer__item">
-                        <h4 class="footer__item-title">thoi dõi chúng tôi trên</h4>
-                        <div class="footer__item-follow">
-                            <a>
-                                <img src="./images/facebook.webp" alt="facebook">
-                            </a>
-                            <a>
-                                <img src="./images/instagram.webp" alt="instagram">
-                            </a>
-                            <a>
-                                <img src="./images/tiktok.webp" alt="tiktok">
-                            </a>
-                            <a>
-                                <img src="./images/youtube.webp" alt="youtube">
-                            </a>
-                        </div>
-                    </div>
-                    <div class="footer__item">
-                        <img class="btc-img" src="./images/btc.webp" alt="bct">
-                        <img class="protected-img" src="./images/dmca_protected_sml_120y.png" alt="protected">
-                    </div>
-                </div>
+    <div class="shipping-footer">
+        <footer>
+            <div class="container-fluid">
+                <div class="footer-bottom">@ Bản quyền thuộc về FORMAT</div>
             </div>
-        </div>
-        <div class="container-fluid">
-            <div class="footer-bottom">@ Bản quyền thuộc về FORMAT</div>
-        </div>
-    </footer>
+        </footer>
+    </div>
     <div class="totop">
         <img src="./images/arrow_upward_24dp_1F1F1F_FILL0_wght400_GRAD0_opsz24.png" alt="">
     </div>
@@ -691,7 +695,7 @@
             <li class="menu-item"><a href="./product.html">ƯU ĐÃI</a></li>
             <li class="menu-item"><a href="/store.html">CỬA HÀNG</a></li>
         </ul>
-     
+
         <div class="popup__sub-menu">
             <li><a href="./account.html"><img src="images/person.png">Tài khoản</a></li>
             <li><a href="account.html?tab=wishlist"><img src="images/favorite.png">

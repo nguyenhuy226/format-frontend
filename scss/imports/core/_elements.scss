@@ -7,6 +7,8 @@ img {
     @include text(24px, $font-main, 34px, $text-black-cl, uppercase);
     @include mid(true);
     margin-bottom: 24px;
-
+    @include xs {
+        font-size: 22px;
+    }
 }
 

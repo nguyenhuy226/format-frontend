@@ -88,12 +88,12 @@ $(document).ready(function () {
     // xử lý pupop cart
     let btnCart = $('.sub-menu-cart');
     let popCart = $('.popup__cart');
-    let btnClose = $('.cart__top-close');
+    let btnPopCarrtClose = $('.cart__top-close');
     let popWrapt = $('.popup__cart-wrap')
     btnCart.on('click', function () {
         popCart.addClass('active')
     })
-    btnClose.on('click', function () {
+    btnPopCarrtClose.on('click', function () {
         popCart.removeClass('active')
     })
     popCart.on('click', function () {
@@ -104,11 +104,46 @@ $(document).ready(function () {
         e.stopPropagation()
     })
 
+    // xử lý pupop menu mobile
+    let btnMenuMobile = $('.btn-menu-mobile');
+    let popMenuMobile = $('.popup__menu-mobile');
+    let btnCloseMenuMObile = $('.menu__mobile-close');
+    btnMenuMobile.on('click', function () {
+        popMenuMobile.addClass('active')
+    })
+    btnCloseMenuMObile.on('click', function () {
+        popMenuMobile.removeClass('active')
+    })
+
+    // xử lý pupop search mobile
+    let btnSearchMobile = $('.sub-menu-search');
+    let popSearchMobile = $('.popup__search-mobile');
+    let btnCloseSearchMObile = $('.search__mobile-close');
+    btnSearchMobile.on('click', function () {
+        popSearchMobile.addClass('active')
+    })
+    btnCloseSearchMObile.on('click', function () {
+        popSearchMobile.removeClass('active')
+    })
+
+    // xử lý pupop filter product mobile
+    let btnFilterMobile = $('.btn-filter-mobile');
+    let popFilterMobile = $('.product__filter');
+    let btnCloseFilterMObile = $('.btn-filter-close');
+    btnFilterMobile.on('click', function () {
+        popFilterMobile.addClass('active')
+    })
+    btnCloseFilterMObile.on('click', function () {
+        popFilterMobile.removeClass('active')
+    })
+
+
     // xử lý filter mở panel
     $(document).on('click', '.accordion__item-title', function () {
         $(this).next().slideToggle(200);
         $(this).parent().toggleClass('active');
     })
+
 
     // xử lý thêm xóa filter 
     $('.panle__item input[type="checkbox"]').change(function () {
@@ -371,8 +406,8 @@ $(document).ready(function () {
 
     });
 
-     // Khi nhấn vào nút quay lại  ở panel đia chỉ
-     $('.back-img-address').on('click', function () {
+    // Khi nhấn vào nút quay lại  ở panel đia chỉ
+    $('.back-img-address').on('click', function () {
         $('.address__panel-list').show();
         $('.address__panel-edit').hide();
         $('.address__panel-add').hide();
@@ -380,19 +415,19 @@ $(document).ready(function () {
     });
 
 
-    // slider  flickity
+    // // slider  flickity
     let $carousel = $('.slider__item-wrap');
     $carousel.flickity({
         pageDots: false,
-        // infinite: true,
-        speed: 700,
-        // slidesToShow: 1,
-        // slidesToScroll: 1,
+        autoPlay: 3000,
+        speed: 800,
+        draggable: true,
         arrows: false,
         cellAlign: 'left',
         wrapAround: true,
     });
 
+    // peoduct realationship flickity
     let $carousel_porduct = $('.product-wrapt-relateship');
     $carousel_porduct.flickity({
         pageDots: false,
@@ -402,26 +437,81 @@ $(document).ready(function () {
         freeScroll: true
     });
 
-    // chuyển trang khi nhấn vào wishlist 
-     // Lấy query parameter từ URL
-     const urlParams = new URLSearchParams(window.location.search);
-     const tab = urlParams.get('tab'); // Lấy giá trị của 'tab'
- 
-     // Nếu tab là 'wishlist', active nav-item và hiển thị panel tương ứng
-     if (tab === 'wishlist') {
-         // Xóa class 'active' khỏi tất cả các nav-item
-         $('.nav-item').removeClass('active');
- 
-         // Tìm và active nav-item có text là "Sản phẩm yêu thích"
-         $('.nav-item').filter(function () {
-             return $(this).text().trim() === 'Sản phẩm yêu thích';
-         }).addClass('active');
- 
-         // Ẩn tất cả các panel
-         $('.account__panel').hide();
- 
-         // Hiển thị panel tương ứng với "Sản phẩm yêu thích"
-         $('.account__panel').eq(7).show(); // Panel thứ 7 (index 6)
-     }
 
+    //product detail flickity mobile
+    function initFlickityIfMobile() {
+        if ($(window).width() <= 768) {
+          let $carousel_service = $('.product__service');
+
+          // Kiểm tra nếu chưa khởi tạo Flickity
+          if (!$carousel_service.hasClass('flickity-enabled')) {
+            $carousel_service.flickity({
+                // pageDots: false,
+                speed: 700,
+                cellAlign: 'left',
+                prevNextButtons: false,
+            });
+          }
+        } else {
+          // Nếu vượt mobile => destroy Flickity nếu đã có
+          let $carousel_service = $('.product__service');
+          if ($carousel_service.hasClass('flickity-enabled')) {
+            $carousel_service.flickity('destroy');
+          }
+        }
+      }
+
+      // Gọi khi load trang và khi resize
+      initFlickityIfMobile();
+      $(window).resize(function () {
+        initFlickityIfMobile();
+      });    
+
+
+    // chuyển trang khi nhấn vào wishlist 
+    // Lấy query parameter từ URL
+    const urlParams = new URLSearchParams(window.location.search);
+    const tab = urlParams.get('tab'); // Lấy giá trị của 'tab'
+
+    // Nếu tab là 'wishlist', active nav-item và hiển thị panel tương ứng
+    if (tab === 'wishlist') {
+        // Xóa class 'active' khỏi tất cả các nav-item
+        $('.nav-item').removeClass('active');
+
+        // Tìm và active nav-item có text là "Sản phẩm yêu thích"
+        $('.nav-item').filter(function () {
+            return $(this).text().trim() === 'Sản phẩm yêu thích';
+        }).addClass('active');
+
+        // Ẩn tất cả các panel
+        $('.account__panel').hide();
+
+        // Hiển thị panel tương ứng với "Sản phẩm yêu thích"
+        $('.account__panel').eq(7).show(); // Panel thứ 7 (index 6)
+    }
+
+
+
+    // xử lý tăng giảm số lượng sản phẩm
+    // Khi nhấn vào nút giảm
+    $('.quantity-prev').on('click', function () {
+        const input = $(this).siblings('.quantity');
+        let value = parseInt(input.val());
+        const min = parseInt(input.attr('min')) || 1;
+
+        if (value > min) {
+            input.val(value - 1);
+        }
+    });
+
+    // Khi nhấn vào nút tăng
+    $('.quantity-next').on('click', function () {
+        const input = $(this).siblings('.quantity');
+        let value = parseInt(input.val());
+        const max = parseInt(input.attr('max')) || 10;
+
+        if (value < max) {
+            input.val(value + 1);
+        }
+    });
 })

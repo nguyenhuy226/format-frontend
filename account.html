@@ -32,12 +32,20 @@
                             <button type="submit"><img src="images/search.png"></button>
                             <input type="text" placeholder="TÌM KIẾM">
                         </form>
+                        <div class="btn-menu-mobile">
+                            <li><a href="#"><img src="images/menu_24dp_1F1F1F_FILL0_wght400_GRAD0_opsz24.png">menu</a>
+                            </li>
+                        </div>
                         <div class="sub-menu">
                             <li><a href="./store.html"><img src="images/location.png">CỬA HÀNG</a></li>
                             <li><a href="account.html?tab=wishlist"><img src="images/favorite.png">
                                     SẢN PHẨM YÊU THÍCH</a></li>
                             <li class="sub-menu-cart"><a href="#"><img src="images/shopping.png">GIỎ HÀNG</a></li>
                             <li><a href="./account.html"><img src="images/person.png">TÀI KHOẢN</a></li>
+                        </div>
+                        <div class="sub-menu-mobile">
+                            <li class="sub-menu-search"><a href="#"><img src="images/search.png">tìm kiêm </a></li>
+                            <li class="sub-menu-cart"><a href="#"><img src="images/shopping.png">GIỎ HÀNG</a></li>
                         </div>
                     </div>
                     <div class="logo">
@@ -169,6 +177,7 @@
                     </div>
                 </div>
             </div>
+
         </div>
     </header>
     <main class="mainwrapper accountpage">
@@ -184,26 +193,38 @@
                     <div class="account__nav-item">
                         <p class="account__nav-title">thông tin cá nhân</p>
                         <p class="nav-item active"><img src="./images/person.png" alt="">Tài khoản của tôi</p>
-                        <p class="nav-item"><img src="./images/contact_emergency_24dp_1F1F1F_FILL0_wght400_GRAD0_opsz24.png" alt="">Thông tin cá nhân</p>
-                        <p class="nav-item"><img src="./images/map_24dp_1F1F1F_FILL0_wght400_GRAD0_opsz24.png" alt="">Địa chỉ nhận hàng</p>
-                        <p class="nav-item"><img src="./images/featured_seasonal_and_gifts_24dp_1F1F1F_FILL0_wght400_GRAD0_opsz24.png" alt="">Ưu đãi của tôi</p>
-                        <p class="nav-item"><img src="./images/local_post_office_24dp_1F1F1F_FILL0_wght400_GRAD0_opsz24.png" alt="">Đăng ký nhận bản tin</p>
+                        <p class="nav-item"><img
+                                src="./images/contact_emergency_24dp_1F1F1F_FILL0_wght400_GRAD0_opsz24.png" alt="">Thông
+                            tin cá nhân</p>
+                        <p class="nav-item"><img src="./images/map_24dp_1F1F1F_FILL0_wght400_GRAD0_opsz24.png"
+                                alt="">Địa chỉ nhận hàng</p>
+                        <p class="nav-item"><img
+                                src="./images/featured_seasonal_and_gifts_24dp_1F1F1F_FILL0_wght400_GRAD0_opsz24.png"
+                                alt="">Ưu đãi của tôi</p>
+                        <p class="nav-item"><img
+                                src="./images/local_post_office_24dp_1F1F1F_FILL0_wght400_GRAD0_opsz24.png" alt="">Đăng
+                            ký nhận bản tin</p>
                     </div>
                     <div class="account__nav-item">
                         <p class="account__nav-title">đơn hàng của tôi</p>
-                        <p class="nav-item"><img src="./images/filter_none_24dp_1F1F1F_FILL0_wght400_GRAD0_opsz24.png" alt="">Lịch sử đơn hàng</p>
-                        <p class="nav-item"><img src="./images/comment_24dp_1F1F1F_FILL0_wght400_GRAD0_opsz24.png" alt="">Đánh giá của tôi</p>
+                        <p class="nav-item"><img src="./images/filter_none_24dp_1F1F1F_FILL0_wght400_GRAD0_opsz24.png"
+                                alt="">Lịch sử đơn hàng</p>
+                        <p class="nav-item"><img src="./images/comment_24dp_1F1F1F_FILL0_wght400_GRAD0_opsz24.png"
+                                alt="">Đánh giá của tôi</p>
                     </div>
                     <div class="account__nav-item">
                         <p class="account__nav-title">yêu thích</p>
                         <p class="nav-item"><img src="./images/favorite.png" alt="">Sản phẩm yêu thích</p>
-                        <p class="nav-item"><img src="./images/style_24dp_1F1F1F_FILL0_wght400_GRAD0_opsz24.png" alt="">Sản phẩm đã xem</p>
+                        <p class="nav-item"><img src="./images/style_24dp_1F1F1F_FILL0_wght400_GRAD0_opsz24.png"
+                                alt="">Sản phẩm đã xem</p>
                     </div>
                     <button class="white">đăng xuất</button>
                 </div>
                 <div class="account__panels">
                     <div class="account__panel">
-                        <p class="account__panel-title">tài khoản của tôi</p>
+                        <p class="account__panel-title"><img class="btn-open-nav"
+                                src="./images/chevron_right_24dp_1F1F1F_FILL0_wght400_GRAD0_opsz24.png" alt="btn-nav">tài
+                            khoản của tôi</p>
                         <div class="account__panel-info">
                             <div class="info__item">
                                 <p class="info__item-title">thông tin cá nhân</p>
@@ -255,7 +276,8 @@
                         </div>
                     </div>
                     <div class="account__panel" hidden>
-                        <p class="account__panel-title">thông tin cá nhân</p>
+                        <p class="account__panel-title"><img class="btn-open-nav"
+                            src="./images/chevron_right_24dp_1F1F1F_FILL0_wght400_GRAD0_opsz24.png" alt="btn-nav">thông tin cá nhân</p>
                         <form class="account__form">
                             <div class="form-group">
                                 <label for="name">Họ và tên *</label>
@@ -267,13 +289,13 @@
                                     style="background-color: #dfdfdf;">
                             </div>
                             <div class="row">
-                                <div class="form-group col-6">
+                                <div class="form-group col-xl-6 col-12">
                                     <label for="phone">Số điện thoại</label>
                                     <input type="text" id="phone" name="phone" value="0363089404" disabled
                                         style="background-color: #dfdfdf;">
                                     <p class="form-note">Nếu cần đổi số điện thoại quý khách vui lòng liên hệ CSKH</p>
                                 </div>
-                                <div class="form-group col-6">
+                                <div class="form-group col-xl-6 col-12">
                                     <label for="birthday">Sinh nhật</label>
                                     <input type="text" id="birthday" name="birthday" value="3//4/1998" disabled
                                         style="background-color: #dfdfdf;">
@@ -333,16 +355,42 @@
                                 </div>
                             </div>
                             <div class="button">
-                                <button class="white">hủy bỏ</button>
-                                <button>lưu lại</button>
+                                <button class="white col-xl-6 col-12" >hủy bỏ</button>
+                                <button class="col-xl-6 col-12">lưu lại</button>
                             </div>
                         </form>
                     </div>
                     <div class="account__panel" hidden>
                         <div class="address__panel-list">
                             <div class="address__panel-top">
-                                <p class="account__panel-title">Danh sách địa chỉ nhận hàng</p>
+                                <p class="account__panel-title"><img class="btn-open-nav"
+                                    src="./images/chevron_right_24dp_1F1F1F_FILL0_wght400_GRAD0_opsz24.png" alt="btn-nav">Danh sách địa chỉ nhận hàng</p>
                                 <button class="btn-add-address">+ thêm địa chỉ nhận hàng</button>
+                            </div>
+                            <div class="address__panel-main">
+                                <div class="address__content">
+                                    <div class="name__address">
+                                        <p class="name__address-text">nguyễn hữu huy - 0363089404</p>
+                                        <p class="address__default">Mặc định</p>
+                                    </div>
+                                    <div class="address__text">
+                                        581/19 trường chinh, Phường Tân Sơn Nhì, Quận Tân phú, Thành phố Hồ chí minh
+                                    </div>
+                                </div>
+                                <div class="address__tool">
+                                    <div class="button__address-edit">
+                                        <img src="./images/edit_note_24dp_1F1F1F_FILL0_wght400_GRAD0_opsz24.png"
+                                            alt="edit">
+                                        <span>chỉnh sữa</span>
+                                    </div>
+                                    <div class="button__address-delete">
+                                        <img src="./images/delete_24dp_1F1F1F_FILL0_wght400_GRAD0_opsz24.png"
+                                            alt="delete">
+                                        <span>xóa</span>
+                                        <span class="tooltip-text">Để xóa địa chỉ mặc định này vui lòng chọn lại một địa
+                                            chỉ mặc định khác trước khi xóa</span>
+                                    </div>
+                                </div>
                             </div>
                             <div class="address__panel-main">
                                 <div class="address__content">
@@ -384,20 +432,20 @@
                                     <input type="text" id="phone" name="email" placeholder="Nhập số điện thoại">
                                 </div>
                                 <div class="row">
-                                    <div class="form-group col-4">
+                                    <div class="form-group col-xl-4 col-12">
                                         <label for="province">Tỉnh/Thành phố *</label>
                                         <select name="province" class="province">
                                             <option>Chọn Tỉnh/Thành phố</option>
                                         </select>
                                     </div>
-                                    <div class="form-group col-4">
+                                    <div class="form-group col-xl-4 col-12">
                                         <label for="district">Quận/Huyện *</label>
                                         <select name="district" class="district">
                                             <option>Chọn Quận/Huyện</option>
 
                                         </select>
                                     </div>
-                                    <div class="form-group col-4">
+                                    <div class="form-group col-xl-4 col-12">
                                         <label for="ward">Phường xã *</label>
                                         <select name="ward" class="ward">
                                             <option>Chọn Phường/Xã</option>
@@ -414,8 +462,8 @@
                                     <label for="changepass">Đặt làm địa chỉ mặc định</label>
                                 </div>
                                 <div class="button">
-                                    <button class="white">hủy bỏ</button>
-                                    <button>lưu lại</button>
+                                    <button class="white col-xl-6 col-12">hủy bỏ</button>
+                                    <button class="col-xl-6 col-12">lưu lại</button>
                                 </div>
                             </form>
                         </div>
@@ -433,20 +481,20 @@
                                     <input type="text" id="phone" name="email" value="036305478">
                                 </div>
                                 <div class="row">
-                                    <div class="form-group col-4">
+                                    <div class="form-group col-xl-4 col-12">
                                         <label for="province">Tỉnh/Thành phố *</label>
                                         <select name="province" class="province">
                                             <option>Chọn Tỉnh/Thành phố</option>
                                         </select>
                                     </div>
-                                    <div class="form-group col-4">
+                                    <div class="form-group col-xl-4 col-12">
                                         <label for="district">Quận/Huyện *</label>
                                         <select name="district" class="district">
                                             <option>Chọn Quận/Huyện</option>
 
                                         </select>
                                     </div>
-                                    <div class="form-group col-4">
+                                    <div class="form-group col-xl-4 col-12">
                                         <label for="ward">Phường xã *</label>
                                         <select name="ward" class="ward">
                                             <option>Chọn Phường/Xã</option>
@@ -464,16 +512,17 @@
                                 </div>
                                 <div class="default-notification">Đó là địa chỉ vận chuyện mặc định</div>
                                 <div class="button">
-                                    <button class="white">hủy bỏ</button>
-                                    <button>lưu lại</button>
+                                    <button class="white col-xl-6 col-12">hủy bỏ</button>
+                                    <button class="col-xl-6 col-12">lưu lại</button>
                                 </div>
                             </form>
                         </div>
                     </div>
                     <div class="account__panel" hidden>
-                        <p class="account__panel-title">ưu đãi của tôi</p>
+                        <p class="account__panel-title"><img class="btn-open-nav"
+                            src="./images/chevron_right_24dp_1F1F1F_FILL0_wght400_GRAD0_opsz24.png" alt="btn-nav"> ưu đãi của tôi</p>
                         <div class="endow__panel row">
-                            <div class="col-6">
+                            <div class="col-xl-6 col-12">
                                 <div class="endow__item">
                                     <div class="endow__item-top">
                                         <div class="endow__item-name">
@@ -503,7 +552,7 @@
                                     </div>
                                 </div>
                             </div>
-                            <div class="col-6">
+                            <div class="col-xl-6 col-12">
                                 <div class="endow__item">
                                     <div class="endow__item-top">
                                         <div class="endow__item-name">
@@ -533,7 +582,7 @@
                                     </div>
                                 </div>
                             </div>
-                            <div class="col-6">
+                            <div class="col-xl-6 col-12">
                                 <div class="endow__item">
                                     <div class="endow__item-top">
                                         <div class="endow__item-name">
@@ -566,7 +615,8 @@
                         </div>
                     </div>
                     <div class="account__panel" hidden>
-                        <p class="account__panel-title">đăng ký nhật bản tin</p>
+                        <p class="account__panel-title"><img class="btn-open-nav"
+                            src="./images/chevron_right_24dp_1F1F1F_FILL0_wght400_GRAD0_opsz24.png" alt="btn-nav"> đăng ký nhật bản tin</p>
                         <p class="newsletter">Thiết lập bản tin của Quý khách để nhận tin tức và thông tin về xu
                             hướng hàng tuần
                         </p>
@@ -576,14 +626,14 @@
                                 <label for="registeremail">Đăng ký nhận tin</label>
                             </div>
 
-                            <button>chấp nhận</button>
-
+                            <button class="full-mobile">chấp nhận</button>
                         </form>
                     </div>
                     <div class="account__panel" hidden>
-                        <p class="account__panel-title">lịch sử đơn hàng</p>
-                        <!-- <div class="order__panel row" hidden>
-                            <div class="col-6">
+                        <p class="account__panel-title"><img class="btn-open-nav"
+                            src="./images/chevron_right_24dp_1F1F1F_FILL0_wght400_GRAD0_opsz24.png" alt="btn-nav">lịch sử đơn hàng</p>
+                        <div class="order__panel row">
+                            <div class="col-xl-6 col-12 order__item-wrapt">
                                 <div class="order__item">
                                     <div class="order__item-top">
                                         <p class="order__item-title">Đơn hàng #123456789</p>
@@ -595,7 +645,7 @@
                                     </div>
                                 </div>
                             </div>
-                            <div class="col-6">
+                            <div class="col-xl-6 col-12 order__item-wrapt">
                                 <div class="order__item">
                                     <div class="order__item-top">
                                         <p class="order__item-title">Đơn hàng #123456789</p>
@@ -607,7 +657,7 @@
                                     </div>
                                 </div>
                             </div>
-                            <div class="col-6">
+                            <div class="col-xl-6 col-12 order__item-wrapt">
                                 <div class="order__item">
                                     <div class="order__item-top">
                                         <p class="order__item-title">Đơn hàng #123456789</p>
@@ -619,22 +669,24 @@
                                     </div>
                                 </div>
                             </div>
-                        </div> -->
-                        <div class="odder__empty">
+                        </div>
+                        <!-- <div class="odder__empty">
                             <img src="./images/upcoming.svg" alt="upcoming">
                             <p class="odder__empty-title">Quý khách hiện chưa có đơn hàng nào</p>
                             <button>mua sắm ngay</button>
-                        </div>
+                        </div> -->
                     </div>
                     <div class="account__panel" hidden>
-                        <p class="account__panel-title">đánh giá của tôi</p>
+                        <p class="account__panel-title"><img class="btn-open-nav"
+                            src="./images/chevron_right_24dp_1F1F1F_FILL0_wght400_GRAD0_opsz24.png" alt="btn-nav">đánh giá của tôi</p>
                         <div class="reviewer__empty">
                             <img src="./images/my-review-empty.png" alt="upcoming">
                             <p class="odder__empty-title">Quý khách hiện chưa có đánh giá sản phẩm</p>
                         </div>
                     </div>
                     <div class="account__panel" hidden>
-                        <p class="account__panel-title">sản phẩm yêu thích</p>
+                        <p class="account__panel-title"><img class="btn-open-nav"
+                            src="./images/chevron_right_24dp_1F1F1F_FILL0_wght400_GRAD0_opsz24.png" alt="btn-nav">sản phẩm yêu thích</p>
                         <div class="wishlist__top">
                             <div class="wishlist__quantity">có 2 sản phẩm</div>
                             <div class="wishlist__tools">
@@ -646,7 +698,7 @@
                             </div>
                         </div>
                         <div class="wishlist__list row">
-                            <div class="product__item col-4">
+                            <div class="product__item col-xl-4 col-6">
                                 <div class="product__item-img">
                                     <a>
                                         <img src="./images/products/10000459.webp" alt="product">
@@ -668,7 +720,7 @@
                                 </div>
                                 <button>thêm vào giỏ hàng</button>
                             </div>
-                            <div class="product__item col-4">
+                            <div class="product__item col-xl-4 col-6">
                                 <div class="product__item-img">
                                     <a>
                                         <img src="./images/products/10000459.webp" alt="product">
@@ -690,7 +742,7 @@
                                 </div>
                                 <button>thêm vào giỏ hàng</button>
                             </div>
-                            <div class="product__item col-4">
+                            <div class="product__item col-xl-4 col-6">
                                 <div class="product__item-img">
                                     <a>
                                         <img src="./images/products/10000459.webp" alt="product">
@@ -712,7 +764,7 @@
                                 </div>
                                 <button>thêm vào giỏ hàng</button>
                             </div>
-                            <div class="product__item col-4">
+                            <div class="product__item col-xl-4 col-6">
                                 <div class="product__item-img">
                                     <a>
                                         <img src="./images/products/10000459.webp" alt="product">
@@ -750,7 +802,8 @@
                         </div>
                     </div>
                     <div class="account__panel" hidden>
-                        <p class="account__panel-title">lịch sử đơn hàng</p>
+                        <p class="account__panel-title"><img class="btn-open-nav"
+                            src="./images/chevron_right_24dp_1F1F1F_FILL0_wght400_GRAD0_opsz24.png" alt="btn-nav">lịch sử đơn hàng</p>
                         <div class="odder__empty">
                             <img src="./images/upcoming.svg" alt="upcoming">
                             <p class="odder__empty-title">Quý khách hiện chưa xem qua sản phẩm nào</p>
@@ -763,33 +816,33 @@
         <section class="service pd">
             <div class="container">
                 <div class="service__wrapt row">
-                    <div class="service__item col-3">
+                    <div class="service__item col-6 col-xl-3">
                         <div class="service__item-img">
                             <img src="./images/service/homepage-service01.webp" alt="">
                         </div>
                         <p class="service__item-title">đặc quyền vip</p>
                         <p class="service__item-des">Tích điểm và nhận ưu đãi đến 35%</p>
                     </div>
-                    <div class="service__item col-3">
+                    <div class="service__item col-6 col-xl-3">
                         <div class="service__item-img">
                             <img src="./images/service/homepage-service02.webp" alt="">
                         </div>
-                        <p class="service__item-title">đặc quyền vip</p>
-                        <p class="service__item-des">Tích điểm và nhận ưu đãi đến 35%</p>
+                        <p class="service__item-title">CÁ NHÂN HÓA TRẢI NGHIỆM</p>
+                        <p class="service__item-des">Ghi dấu phong cách cùng Format</p>
                     </div>
-                    <div class="service__item col-3">
+                    <div class="service__item col-6 col-xl-3">
                         <div class="service__item-img">
                             <img src="./images/service/homepage-service03.webp" alt="">
                         </div>
-                        <p class="service__item-title">đặc quyền vip</p>
-                        <p class="service__item-des">Tích điểm và nhận ưu đãi đến 35%</p>
+                        <p class="service__item-title">BẢO HÀNH VÀ BẢO TRÌ</p>
+                        <p class="service__item-des">Bền đẹp cùng năm tháng</p>
                     </div>
-                    <div class="service__item col-3">
+                    <div class="service__item col-6 col-xl-3">
                         <div class="service__item-img">
                             <img src="./images/service/homepage-service04.webp" alt="">
                         </div>
-                        <p class="service__item-title">đặc quyền vip</p>
-                        <p class="service__item-des">Tích điểm và nhận ưu đãi đến 35%</p>
+                        <p class="service__item-title">VỪA VẶN NHƯ MAY ĐO RIÊNG</p>
+                        <p class="service__item-des">Cá nhân hóa đến từng chi tiết</p>
                     </div>
 
                 </div>
@@ -838,6 +891,8 @@
                         <div class="contact__item-qr">
                             <img src="./images/QR.webp" alt="">
                         </div>
+                        <button class="btn-dowloadapp">tải app ngay</button>
+
                     </div>
 
                 </div>
@@ -847,7 +902,7 @@
     <footer>
         <div class="container">
             <div class="footer__wrapt row">
-                <div class="footer__items col-3">
+                <div class="footer__items col-xl-3 col-12">
                     <div class="footer__item">
                         <h4 class="footer__item-title">công ty cổ phần staaar</h4>
                         <p>Tàng 6, sô 96 Thái Hà P. Trung Liệt, Q. Đống Đa, TP. Hà Nội</p>
@@ -866,7 +921,7 @@
                         <p>Email: contact@format.vn</p>
                     </div>
                 </div>
-                <div class="footer__items col-3">
+                <div class="footer__items col-xl-3 col-12">
                     <h4 class="footer__item-title">về format</h4>
                     <ul>
                         <li><a href="#">giới thiệu</a></li>
@@ -877,7 +932,7 @@
                         <li><a href="#">liên hệ</a></li>
                     </ul>
                 </div>
-                <div class="footer__items col-3">
+                <div class="footer__items col-xl-3 col-12">
                     <h4 class="footer__item-title">chính sách</h4>
                     <ul>
                         <li><a href="#">chính sách khách hàng</a></li>
@@ -890,7 +945,7 @@
                         <li><a href="#">chính sách bảo mật thông tin</a></li>
                     </ul>
                 </div>
-                <div class="footer__items col-3">
+                <div class="footer__items col-xl-3 col-12">
                     <div class="footer__item">
                         <h4 class="footer__item-title">chấp nhận thanh toán</h4>
                         <img src="./images/list-pay.webp" alt="list-pay">
@@ -1223,9 +1278,39 @@
                     <p class="money">4,612,000 đ</p>
                 </div>
                 <p class="des">* Ưu đãi có thể được áp dụng trong giỏ hàng</p>
-                <button class="cart">xem giỏ hàng</button>
+                <button class="full">xem giỏ hàng</button>
             </div>
         </div>
+    </div>
+    <div class="popup__menu-mobile">
+        <p class="menu__mobile-close">
+            <img src="images/close_24dp_1F1F1F_FILL0_wght400_GRAD0_opsz24.png" alt="close">
+        </p>
+        <ul class="popup__menu-main">
+            <li class="menu-item female"><a href="./product.html">NỮ</a></li>
+            <li class="menu-item male"><a href="./product.html">NAM</a></li>
+            <li class="menu-item"><a href="./collection.html">BỘ SƯU TẬP</a></li>
+            <li class="menu-item"><a href="./product.html">ƯU ĐÃI</a></li>
+            <li class="menu-item"><a href="/store.html">CỬA HÀNG</a></li>
+        </ul>
+
+        <div class="popup__sub-menu">
+            <li><a href="./account.html"><img src="images/person.png">Tài khoản</a></li>
+            <li><a href="account.html?tab=wishlist"><img src="images/favorite.png">
+                    Sản phẩm yêu thích</a></li>
+            <li><a href="./store.html"><img src="images/location.png">Danh sách cửa hàng</a></li>
+            <li class="sub-menu-cart"><a href="#"><img src="images/shopping.png">Hỗ trợ khách hàng</a></li>
+        </div>
+    </div>
+    <div class="popup__search-mobile">
+        <div class="search__mobile-top">
+            <img class="search__mobile-close" src="images/close_24dp_1F1F1F_FILL0_wght400_GRAD0_opsz24.png" alt="close">
+            <p class="title-search">tìm kiếm</p>
+        </div>
+        <form class="search">
+            <button type="submit"><img src="images/search.png"></button>
+            <input type="text" placeholder="TÌM KIẾM">
+        </form>
     </div>
     <script type="text/javascript" src="dest/jsmain.min.js"></script>
     <script type="text/javascript" src="dest/main.js"></script>

@@ -1,0 +1,544 @@
+.shippingpage {
+    padding-top: 74px;
+    width: 100%;
+    margin: auto;
+    background-color: $gray-cl;
+
+    .shipping__container {
+        max-width: 1344px;
+        margin-left: auto;
+        margin-right: auto;
+        padding-bottom: 60px;
+
+        .shipping__progress {
+            padding: 24px 0;
+            @include mid(true);
+            position: relative;
+            &-item {
+                padding: 0 24px;
+                display: flex;
+                align-items: center;
+                flex-direction: column;
+                gap: 10px;
+
+                .progress__number {
+                    width: 36px;
+                    height: 36px;
+                    border-radius: 50%;
+                    background-color: $white-cl;
+                    border: 1px solid #9a9a9a;
+                    @include mid(true);
+                    color: #9a9a9a;
+
+                }
+                &.active {
+                    .progress__number {
+                        background-color: $black-cl;
+                        color: $white-cl
+                    }
+                }
+
+                .progress__text {
+                    @include text(12px, $font-main, 17px, $text-cl, uppercase);
+
+                }
+            }
+            &::after {
+                content: "";
+                width: 132px;
+                height: 1px;
+                background-color: $text-black-cl;
+                position: absolute;
+                top: 40%;
+                left: 46%;
+            }
+        }
+
+        .shipping {
+            .shipping__left {
+                .shipping__receive {
+                    background-color: $main-bg-cl;
+                    padding: 16px 16px 8px;
+                    margin-bottom: 28px;
+
+                    .receive__title {
+                        padding: 8px 0;
+                        @include text(20px, $font-main, 22px, $text-black-cl, uppercase);
+                    }
+
+                    .receive__title-sub {
+                        margin: 16px 0;
+                        @include text(14px, $font-main, 26px, $text-black-cl, none);
+                        font-weight: bold;
+                    }
+
+                    .note-text {
+                        @include text(12px, $font-main, 16px, $text-black-cl, none);
+                        padding-bottom: 8px;
+                    }
+
+                    .note-input {
+                        width: 100%;
+                        border: 1px solid rgba(0, 0, 0, .09);
+                        padding: 8px 0 8px 12px;
+                        margin-bottom: 32px;
+                        font-size: 14px;
+                        letter-spacing: -.14px;
+                        color: #151515;
+                        font-family: $font-main;
+                        line-height: 20px;
+                        outline: none;
+                        height: 44px;
+                    }
+
+                    .receive__method {
+                        display: flex;
+                        gap: 16px;
+
+                        .receive__home {
+                            flex: 1;
+                            padding: 12px;
+                            border: 1px solid $text-cl;
+                            display: flex;
+                            gap: 8px;
+
+                            .receive__home-dot {
+                                width: 14px;
+                                height: 14px;
+                                @include mid(true);
+                                border: 1px solid $text-black-cl;
+                                border-radius: 50%;
+
+                                .dot {
+                                    width: 8px;
+                                    height: 8px;
+                                    background-color: $text-cl;
+                                    border-radius: 50%;
+                                }
+                            }
+
+                            .receive__home-text {
+                                .receive-main {
+                                    @include text(14px, $font-main, 18px, $text-black-cl, uppercase);
+                                    margin-bottom: 4px;
+
+                                }
+
+                                .receive-sub {
+                                    @include text(14px, $font-main, 18px, $text-black-cl, none);
+
+                                }
+                            }
+                        }
+
+                        .receive__store {
+                            flex: 1;
+                            padding: 12px;
+                            border: 1px solid rgba(0, 0, 0, .09);
+                            background: #ebebeb;
+                            display: flex;
+                            gap: 8px;
+
+                            .receive__store-dot {
+                                width: 14px;
+                                height: 14px;
+                                @include mid(true);
+                                border: 1px solid #999999;
+                                border-radius: 50%;
+
+                                .dot {
+                                    width: 8px;
+                                    height: 8px;
+                                    background-color: $text-cl;
+                                    border-radius: 50%;
+                                }
+                            }
+
+                            .receive__store-text {
+                                .receive-main {
+                                    @include text(14px, $font-main, 18px, #999999, uppercase);
+                                    margin-bottom: 4px;
+                                }
+
+                                .receive-sub {
+                                    @include text(14px, $font-main, 18px, #999999, none);
+
+                                }
+                            }
+                        }
+                    }
+
+                    .receive__address {
+                        .receive__ddress-item {
+                            padding: 12px;
+                            border: 1px solid rgba(0, 0, 0, .09);
+                            margin-bottom: 16px;
+
+                            .receive__ddress-border {
+                                border: 1px solid rgba(0, 0, 0, .09);
+                                padding: 12px;
+                                display: flex;
+                                gap: 8px;
+
+                                .receive__address-dot {
+                                    width: 14px;
+                                    height: 14px;
+                                    @include mid(true);
+                                    border: 1px solid $text-black-cl;
+                                    border-radius: 50%;
+                                    flex-shrink: 0;
+
+                                    .dot {
+                                        width: 8px;
+                                        height: 8px;
+                                        background-color: $text-cl;
+                                        border-radius: 50%;
+                                    }
+                                }
+
+                                .receive__address-text {
+                                    .receive__address-main {
+                                        @include text(16px, $font-main, 22px, $text-black-cl, none);
+                                        font-weight: bold;
+                                        margin-bottom: 8px;
+
+                                        .address-default {
+                                            @include text(14px, $font-main, 17px, $text-black-cl, none);
+                                            padding: 4px 8px;
+                                            margin-left: 16px;
+                                            font-weight: initial;
+                                            background-color: #eeeeee;
+                                        }
+
+                                    }
+
+                                    .receive__address-sub {
+                                        @include text(16px, $font-main, 22px, $text-black-cl, none);
+                                        padding-left: 28px;
+                                    }
+                                }
+                            }
+                        }
+                    }
+                }
+
+                .shipping__transport {
+                    padding: 16px;
+                    background-color: $main-bg-cl;
+
+                    .transport__title {
+                        padding: 8px 0;
+                        @include text(20px, $font-main, 22px, $text-black-cl, uppercase);
+                    }
+
+                    .transport__title-sub {
+                        margin: 16px 0;
+                        @include text(14px, $font-main, 26px, $text-black-cl, none);
+                        font-weight: bold;
+                    }
+
+                    .transport__method {
+                        .transport__item {
+                            flex: 1;
+                            padding: 12px;
+                            border: 1px solid $text-cl;
+                            display: flex;
+                            gap: 8px;
+
+                            .transport__item-dot {
+                                flex-shrink: 0;
+                                width: 14px;
+                                height: 14px;
+                                @include mid(true);
+                                border: 1px solid $text-black-cl;
+                                border-radius: 50%;
+
+                                .dot {
+                                    width: 8px;
+                                    height: 8px;
+                                    background-color: $text-cl;
+                                    border-radius: 50%;
+                                }
+
+                            }
+
+                            .transport__item-text {
+                                .transport-main {
+                                    @include text(14px, $font-main, 20px, $text-black-cl, uppercase);
+                                    margin-bottom: 4px;
+
+                                }
+
+                                .transport-sub {
+                                    @include text(14px, $font-main, 18px, $text-black-cl, none);
+
+                                }
+                            }
+                        }
+                    }
+
+
+                }
+
+                button {
+                    margin-top: 20px;
+                    float: right;
+                    font-size: 16px;
+                    width: 164px;
+                }
+            }
+
+            .shipping__right {
+                .cart__calculate {
+                    flex: 1;
+                    flex-shrink: 0;
+                    background-color: $main-bg-cl;
+                    padding: 16px 12px;
+                    margin-bottom: 20px;
+
+                    &-title {
+                        @include text(14px, $font-main, 20px, $text-black-cl, uppercase);
+                        font-weight: bold;
+                        margin-bottom: 8px;
+                    }
+
+                    &-provisional {
+                        display: flex;
+                        justify-content: space-between;
+
+                        .provisional {
+                            @include text(14px, $font-main, 20px, $text-black-cl, none);
+                            padding: 8px 12px 8px 0;
+                            float: 1;
+                        }
+
+                        .money {
+                            @include text(15px, $font-main, 20px, $text-black-cl, none);
+                            padding: 8px 0px 8px 12px;
+
+                        }
+                    }
+
+                    &-discount {
+                        display: flex;
+                        justify-content: space-between;
+                        margin-top: 8px;
+
+                        .discount {
+                            @include text(14px, $font-main, 20px, $text-black-cl, none);
+                            padding: 8px 12px 8px 0;
+
+                        }
+
+                        .money {
+                            @include text(14px, $font-main, 20px, #5DBB4F, none);
+                            padding: 8px 0px 8px 12px;
+
+                        }
+
+                    }
+
+                    &-total {
+                        display: flex;
+                        justify-content: space-between;
+                        margin-top: 8px;
+
+                        .total {
+                            @include text(14px, $font-main, 20px, $text-black-cl, none);
+                            font-weight: bold;
+                            padding: 8px 12px 8px 0;
+
+                        }
+
+                        .money {
+                            @include text(14px, $font-main, 20px, $text-black-cl, none);
+                            font-weight: bold;
+                            padding: 8px 0px 8px 12px;
+
+                        }
+                    }
+
+                    .des {
+                        margin: 10px 0;
+                        @include text(12px, $font-main, 20px, #b0b0b0, none);
+
+                    }
+
+                    .full {
+                        display: none;
+                    }
+
+                }
+
+                .shipping__product-list {
+                    background-color: $main-bg-cl;
+                    padding-top: 16px;
+
+                    .shipping__product-title {
+                        @include text(14px, $font-main, 17px, $text-cl, uppercase);
+                        margin-bottom: 12px;
+                        padding: 0 16px;
+
+                    }
+
+                    .cart__items {
+                        @include customscroll();
+                        overflow: auto;
+                        height: 502px;
+
+                        .cart__item {
+                            padding: 16px 15px;
+                            display: flex;
+                            gap: 16px;
+                            border-top: solid $gray-cl 4px;
+
+                            &-img {
+                                img {
+                                    width: 63px;
+                                    // width: 100%;
+                                }
+                            }
+
+                            &-text {
+                                flex: 1;
+
+                                .cart__item-name {
+                                    @include text(14px, $font-main, 20px, $text-cl, uppercase);
+                                    margin-bottom: 8px;
+                                }
+
+                                .cart__item-sku {
+                                    margin-bottom: 8px;
+                                    @include text(12px, $font-main, 16px, #737373, none);
+                                }
+
+                                .cart__item-info {
+                                    @include text(12px, $font-main, 22px, #737373, uppercase);
+                                    display: flex;
+                                    align-items: center;
+
+                                    // margin-bottom: 8px;
+                                    .info-item {
+                                        position: relative;
+                                        padding-left: 20px;
+
+                                        &::after {
+                                            content: "|";
+                                            position: absolute;
+                                            top: 0px;
+                                            left: 10px;
+                                            @include transform(translateX(-50%))
+                                        }
+
+                                        &:first-child {
+                                            &::after {
+                                                content: "";
+                                            }
+
+                                            padding-left: 0px;
+                                        }
+                                    }
+                                }
+
+                                .quantity {
+                                    margin: 11px 0 8px;
+                                    @include text(12px, $font-main, 22px, #737373, uppercase);
+                                }
+
+                                .cart__item-total {
+                                    display: flex;
+                                    margin-bottom: 8px;
+                                    @include text(14px, $font-main, 22px, $text-cl, none);
+
+                                    .total-number {
+                                        flex: 1;
+                                        font-weight: bold;
+                                    }
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+
+    @include xs {
+        padding: 74px 10px 0;
+
+        .shipping__container {
+
+            .shipping__progress {
+                &::after {
+                    left: 35%;
+                }
+            }
+            .shipping {
+                .shipping__left {
+                    padding-bottom: 20px;
+
+                    .shipping__receive {
+                        padding: 16px 12px 24px;
+
+                        .receive__title {
+                            font-size: 16px;
+                            padding: 4px 0;
+                        }
+
+                        .receive__method {
+                            flex-direction: column;
+                            margin-bottom: 24px;
+
+                            .receive__home {
+                                .receive__home-text {
+                                    .receive-sub {
+                                        font-size: 12px;
+                                    }
+                                }
+                            }
+
+                            .receive__store {
+                                .receive__store-text {
+                                    .receive-sub {
+                                        font-size: 12px;
+
+                                    }
+                                }
+                            }
+                        }
+                    }
+
+                    .shipping__transport {
+                        .transport__title {
+                            font-size: 16px;
+                        }
+
+                        .transport__method {
+                            .transport__item-text {
+                                .transport-sub {
+                                    font-size: 12px;
+                                }
+                            }
+                        }
+                    }
+
+                    button {
+                        display: none;
+                    }
+                }
+
+                .shipping__right {
+                    display: flex;
+                    flex-direction: column-reverse;
+                    gap: 20px;
+                    .cart__calculate {
+                        .full {
+                            display: block;
+                        }
+                    }
+                }
+            }
+
+        }
+    }
+}

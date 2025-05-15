@@ -5,9 +5,9 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
-    <title>Customer Register</title>
+    <title>Giỏ mua hàng</title>
     <link rel="icon" href="https://format.vn/media/favicon/stores/1/NmscbTd.png">
-    <meta name="title" content="Customer Register" />
+    <meta name="title" content="Giỏ mua hàng" />
     <meta name="description"
         content="Tinh tế và đẳng cấp - FirstClass by FORMAT chinh phục các quý cô bởi sự chỉn chu, sắc sảo không chỉ thể hiện bề ngoài mà còn ở từng đường nét mặt trong các thiết kế. " />
     <!-- meta facebook -->
@@ -34,8 +34,8 @@
                             <input type="text" placeholder="TÌM KIẾM">
                         </form>
                         <div class="btn-menu-mobile">
-                            <li><a href="#"><img
-                                        src="images/menu_24dp_1F1F1F_FILL0_wght400_GRAD0_opsz24.png">menu</a></li>
+                            <li><a href="#"><img src="images/menu_24dp_1F1F1F_FILL0_wght400_GRAD0_opsz24.png">menu</a>
+                            </li>
                         </div>
                         <div class="sub-menu">
                             <li><a href="./store.html"><img src="images/location.png">CỬA HÀNG</a></li>
@@ -181,92 +181,21 @@
 
         </div>
     </header>
-    <main class="mainwrapper loginpage">
-        <section class="containt__login">
-            <h2 class="title">đăng ký tài khoản</h2>
-            <p class="login__des">Vui lòng nhập đầy đủ thông tin</p>
-            <form class="account__form">
-                <div class="form-group">
-                    <label for="phone">Số điện thoại *</label>
-                    <input type="text" id="phone" name="phone" placeholder="Nhập số điện thoại của Quý khách">
-                </div>
-                <div class="form-group">
-                    <label for="otp">OTP *</label>
-                    <input type="text" id="otp" name="otp" placeholder="Nhập mã otp đươc gửi tới điện thoại của Qúy khách">
-                </div>
-                <div class="form-group">
-                    <label for="name">Họ và tên *</label>
-                    <input type="text" id="name" name="name" placeholder="Nhập họ và tên của Quý khách">
-                </div>
-                <div class="form-group">
-                    <label for="phone">Sinh nhật *</label>
-                    <input type="date" id="birthday" name="birthday" placeholder="Ngày / Tháng / Năm">
-                </div>
-                <div class="form-group">
-                    <label class="label">Đối tượng *</label>
-                    <div>
-                        <input type="radio" id="male" name="gender" value="male" hidden checked>
-                        <label for="male" class="active">Nam</label>
+    <main class="mainwrapper completepage">
+        <section class="complete">
+            <div class="container">
+                <div class="complete__wrapt">
+                    <div class="complete__img">
+                        <img class="complete__img-main" src="./images/local_mall_75dp_1F1F1F_FILL0_wght400_GRAD0_opsz48.png" alt="complete">
+                        <img class="complete__img-tick" src="./images/check_circle_24dp_FFF_FILL0_wght400_GRAD0_opsz24.svg" alt="tick">
                     </div>
-                    <div>
-                        <input type="radio" id="female" name="gender" value="female" hidden>
-                        <label for="female">Nữ</label>
-                    </div>
-                    <div>
-                        <input type="radio" id="unisex" name="gender" value="unisex" hidden>
-                        <label for="unisex">Unisex</label>
-                    </div>
-                    <p class="form-note">Để thay đổi thông tin quý khách vui lòng liên hệ bộ phận CSKH</p>
-
+                    <p class="complete__title">đặt hàng thành công</p>
+                    <p class="complete__thas">Cảm ơn Quý khách đã lựa chọn FORMAT</p>
+                    <p class="complete__des">Đơn hàng #5895756456 của Quý khách sẽ được xử lý và vận chuyển trong thời
+                        gian sớm nhất</p>
+                    <button>tiếp tục mua sắm</button>
                 </div>
-                <div class="form-group password">
-                    <label for="password">Mật khẩu *</label>
-                    <input type="password" id="password" name="password">
-                    <span class="toggle-password active">👁️</span>
-                </div>
-                <div class="form-group password">
-                    <label for="repassword">Nhập lại mật khẩu *</label>
-                    <input type="password" id="repassword" name="repassword">
-                    <span class="toggle-password active">👁️</span>
-                </div>
-                <div class="form-group">
-                    <label for="email">Email</label>
-                    <input type="text" id="email" name="email" placeholder="Nhập email của Quý khách">
-                </div>
-                <div class="form-group">
-                    <label for="job">Nghề nghiệp</label>
-                    <select name="job" id="job">
-                        <option>Văn phòng</option>
-                        <option>Tự do</option>
-                        <option>Thu Ngân</option>
-                        <option>Marketing</option>
-                        <option>Vận tải</option>
-                        <option>Báo chí</option>
-                        <option>Nghệ thuật</option>
-                        <option>Bảo vệ</option>
-                        <option>CNTT</option>
-                        <option>Xuất khẩu lao động</option>
-                        <option>Phát thanh viên</option>
-                        <option>Nghề nghiệp khác</option>
-                    </select>
-                </div>
-                <div class="form-check">
-                    <input type="checkbox" name="isagree" id="isagree">
-                    <label for="isagree">Tôi đồng ý Điều kiện - Điều khoản & Chính sách bảo mật của FORMAT</label>
-                </div>
-                <div class="form-check">
-                    <input type="checkbox" name="isaccept" id="isaccept">
-                    <label for="isaccept">Nhận thông tin và khuyến mãi mới nhất từ FORMAT</label>
-                </div>
-                <button class="full">đăng ký ngay</button>
-                <div class="form-tools">
-                    <div class="form__login">
-                        <p class="form__login-text">Quý khách đã có tài khoản?</p>
-                        <a href="./login.html" class="form__login-link">Đăng nhập ngay</a>
-                    </div>
-                </div>
-
-            </form>
+            </div>
         </section>
         <section class="service pd">
             <div class="container">
@@ -747,7 +676,7 @@
             <li class="menu-item"><a href="./product.html">ƯU ĐÃI</a></li>
             <li class="menu-item"><a href="/store.html">CỬA HÀNG</a></li>
         </ul>
-     
+
         <div class="popup__sub-menu">
             <li><a href="./account.html"><img src="images/person.png">Tài khoản</a></li>
             <li><a href="account.html?tab=wishlist"><img src="images/favorite.png">

@@ -1,6 +1,7 @@
 // // css components
 .product__item {
     padding-bottom: 20px;
+
     &-img {
         // height: 588px;
         position: relative;
@@ -26,6 +27,7 @@
             top: 10px;
             width: 100%;
             padding: 0 10px;
+
             button.close {
                 border: none;
                 padding: 8px;
@@ -113,18 +115,18 @@
 }
 
 .collection__item {
+    margin-bottom: 20px;
+
     .collection__img {
         width: 100%;
 
         a {
             display: block;
             width: 100%;
-            // height: 1216.22px;
-            // position: relative;
 
-            // img {
-            //     @include midimg(100%);
-            // }
+            img {
+                display: block;
+            }
         }
     }
 
@@ -132,6 +134,8 @@
         padding: 16px 8px 24px;
 
         &-title {
+            margin-bottom: 8px;
+
             a {
                 @include text(20px, $font-main, 28px, #000000, uppercase);
                 @include transition($t);
@@ -148,7 +152,7 @@
 
         &-content {
             @include text(14px, $font-main, 20px, $text-cl, uppercase);
-            margin: 8px 0 11px 0;
+            margin: 0px 0 11px 0;
         }
 
         &-discover {
@@ -192,6 +196,22 @@
             }
         }
     }
+
+    @include xs {
+        .container {
+            .service__wrapt {
+                .service__item {
+                    padding: 27px 12px;
+
+                    &-img {
+                        img {
+                            width: 50px;
+                        }
+                    }
+                }
+            }
+        }
+    }
 }
 
 .contact {
@@ -222,6 +242,8 @@
                         .label {
                             margin-bottom: 8px;
                             display: block;
+                            @include text(12px, $font-main, 16px, $text-black-cl, none);
+
                         }
 
                         div {
@@ -252,6 +274,7 @@
 
                         .email {
                             width: 380px;
+                            max-width: 100%;
                             height: 44px;
                             padding: 8px 0px 8px 46px;
                             background-color: $main-bg-cl;
@@ -283,6 +306,10 @@
                     height: 181px;
                 }
 
+                .btn-dowloadapp {
+                    display: none;
+                }
+
                 &:last-child {
                     padding-left: 40px;
                 }
@@ -304,14 +331,58 @@
             }
         }
     }
+
+    @include xs {
+        .container {
+            .contact__wrapt {
+                flex-direction: column;
+
+                .contact__item {
+                    &:last-child {
+                        padding-left: 0px;
+                        padding-top: 40px;
+                    }
+
+                    &:first-child {
+                        padding-right: 0px;
+                        padding-bottom: 40px;
+
+                        &::after {
+                            width: 100%;
+                            height: 1px;
+                            background-color: #cacaca;
+                            position: absolute;
+                            top: 100%;
+                            right: 0;
+                        }
+                    }
+
+                    &-qr {
+                        display: none;
+                    }
+
+                    &-title {
+                        font-size: 22px;
+                    }
+
+                    .btn-dowloadapp {
+                        display: block;
+                    }
+
+                    form {}
+                }
+            }
+        }
+
+    }
 }
 
 .breadcrumbs {
     padding: 8px 0;
 
     .container {
-        display: flex;
-
+        display: flex;  
+        flex-wrap: wrap;
         p {
             padding: 0 8px;
             position: relative;
@@ -344,7 +415,7 @@ button {
     width: auto;
     height: auto;
     padding: 8px 16px;
-    @include text(14px, $font-main, 16px, $text-white-cl, uppercase);
+    @include text(14px, $font-main, 22px, $text-white-cl, uppercase);
     background-color: $black-bg-cl;
     cursor: pointer;
     @include transition($t);
@@ -370,8 +441,14 @@ button {
             @include transition($t);
         }
     }
+
     &.full {
         width: 100%;
+    }
+    @include xs {
+        &.full-mobile {
+            width: 100%;
+        }
     }
 
 }
@@ -461,11 +538,12 @@ button {
 
         input {
             @include text(14px, $font-main, 15px, $text-cl, none);
+
             &:focus {
                 outline: 1px solid #66a3ff;
                 border: none;
             }
-            
+
         }
 
         select {
@@ -537,12 +615,14 @@ button {
             @include text(14px, $font-main, 22px, $text-cl, none);
         }
     }
+
     .form-tools {
         display: flex;
         justify-content: space-between;
         align-items: center;
         margin: 16px 0;
         position: relative;
+
         .form__forgot {
             &-link {
                 @include text(12px, $font-main, 15px, $text-cl, uppercase);
@@ -552,26 +632,38 @@ button {
 
         .form__register {
             display: flex;
-            gap:8px;
+            gap: 8px;
+
             &-text {
                 @include text(12px, $font-main, 15px, $text-cl, none);
             }
+
             &-link {
                 @include text(12px, $font-main, 15px, $text-cl, uppercase);
                 cursor: pointer;
             }
         }
+
         .form__login {
             display: flex;
             @include mid();
-            gap:8px;
+            gap: 8px;
             margin-top: 16px;
+
             &-text {
                 @include text(14px, $font-main, 15px, $text-cl, none);
             }
+
             &-link {
                 @include text(14px, $font-main, 15px, $text-cl, none);
                 cursor: pointer;
+            }
+        }
+        @include xs {
+            .form__login {
+                width: 100%;
+                justify-content: center;
+            align-items: center;
             }
         }
     }
@@ -582,12 +674,17 @@ button {
         margin-top: 32px;
         display: flex;
         justify-content: space-between;
+        // flex-wrap: wrap;
         gap: 16px;
         border-top: solid 1px $gray-cl;
 
         button {
-            flex: 1;
+            // flex: 1;
             margin: 0;
+        }
+
+        @include xs {
+            flex-wrap: wrap;
         }
     }
 

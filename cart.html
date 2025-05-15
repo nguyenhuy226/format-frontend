@@ -5,9 +5,9 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
-    <title>Customer Register</title>
+    <title>Giỏ mua hàng</title>
     <link rel="icon" href="https://format.vn/media/favicon/stores/1/NmscbTd.png">
-    <meta name="title" content="Customer Register" />
+    <meta name="title" content="Giỏ mua hàng" />
     <meta name="description"
         content="Tinh tế và đẳng cấp - FirstClass by FORMAT chinh phục các quý cô bởi sự chỉn chu, sắc sảo không chỉ thể hiện bề ngoài mà còn ở từng đường nét mặt trong các thiết kế. " />
     <!-- meta facebook -->
@@ -34,8 +34,8 @@
                             <input type="text" placeholder="TÌM KIẾM">
                         </form>
                         <div class="btn-menu-mobile">
-                            <li><a href="#"><img
-                                        src="images/menu_24dp_1F1F1F_FILL0_wght400_GRAD0_opsz24.png">menu</a></li>
+                            <li><a href="#"><img src="images/menu_24dp_1F1F1F_FILL0_wght400_GRAD0_opsz24.png">menu</a>
+                            </li>
                         </div>
                         <div class="sub-menu">
                             <li><a href="./store.html"><img src="images/location.png">CỬA HÀNG</a></li>
@@ -181,92 +181,194 @@
 
         </div>
     </header>
-    <main class="mainwrapper loginpage">
-        <section class="containt__login">
-            <h2 class="title">đăng ký tài khoản</h2>
-            <p class="login__des">Vui lòng nhập đầy đủ thông tin</p>
-            <form class="account__form">
-                <div class="form-group">
-                    <label for="phone">Số điện thoại *</label>
-                    <input type="text" id="phone" name="phone" placeholder="Nhập số điện thoại của Quý khách">
-                </div>
-                <div class="form-group">
-                    <label for="otp">OTP *</label>
-                    <input type="text" id="otp" name="otp" placeholder="Nhập mã otp đươc gửi tới điện thoại của Qúy khách">
-                </div>
-                <div class="form-group">
-                    <label for="name">Họ và tên *</label>
-                    <input type="text" id="name" name="name" placeholder="Nhập họ và tên của Quý khách">
-                </div>
-                <div class="form-group">
-                    <label for="phone">Sinh nhật *</label>
-                    <input type="date" id="birthday" name="birthday" placeholder="Ngày / Tháng / Năm">
-                </div>
-                <div class="form-group">
-                    <label class="label">Đối tượng *</label>
-                    <div>
-                        <input type="radio" id="male" name="gender" value="male" hidden checked>
-                        <label for="male" class="active">Nam</label>
+    <main class="mainwrapper cartpage">
+        <section class="cart">
+            <div class="cart__title">
+                <img src="images/shopping.png" alt="cart">
+                <p class="cart__title-text">giỏ hàng của quý khách</p>
+                <p class="cart__title-quantity">(6 sản phẩm)</p>
+            </div>
+            <!-- <div class="cart__main">
+                <div class="cart__list">
+                    <div class="cart__head">
+                        <div class="cart__head-check">
+                            <input type="checkbox" name="productall" id="productall">
+                        </div>
+                        <p class="cart__head-product">sản phẩm</p>
+                        <p class="cart__head-price">giá</p>
+                        <p class="cart__head-quantity">số lượng</p>
+                        <p class="cart__head-total">tạm tính</p>
                     </div>
-                    <div>
-                        <input type="radio" id="female" name="gender" value="female" hidden>
-                        <label for="female">Nữ</label>
+                    <div class="cart__wrapt">
+                        <div class="cart__item">
+                            <div class="item__check">
+                                <input type="checkbox" name="product" id="product">
+                            </div>
+                            <div class="item__product">
+                                <img src="images/10004190_b939-212q_v_ng_nh_t_1290__10004188_b917-908q_n_u_1490_3.jpg"
+                                    alt="cart">
+                                <div class="item__text">
+                                    <div class="item__info">
+                                        <p class="item__text-name">Áo chống nắng mũ liền chun eo SunStop Cooling</p>
+                                        <p class="item__text-sku">SKU: 2100007870366</p>
+                                        <span class="item__item-size">kích cỡ: size xl | </span><span
+                                            class="item__item-color">màu sắc: be/họa tiết xanh lá</span>
+                                    </div>
+                                    <div class="item__price">1.100.000 đ</div>
+                                    <div class="item__quantity">
+                                        <div class="quantity-wrapt">
+                                            <div class="quantity-prev">-</div>
+                                            <input type="number" class="quantity" value="1" min="1" step="1" disabled>
+                                            <div class="quantity-next">+</div>
+                                        </div>
+                                    </div>
+                                    <div class="item__total">
+                                        <p class="item__total-number">1.100.000 đ</p>
+                                        <div class="bnt__product-close">
+                                            <img class="cart-icon"
+                                                src="images/delete_24dp_1F1F1F_FILL0_wght400_GRAD0_opsz24.png" alt="cart">
+                                            xóa
+                                            <div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="cart__item">
+                            <div class="item__check">
+                                <input type="checkbox" name="product" id="product">
+                            </div>
+                            <div class="item__product">
+                                <img src="images/10004190_b939-212q_v_ng_nh_t_1290__10004188_b917-908q_n_u_1490_3.jpg"
+                                    alt="cart">
+                                <div class="item__text">
+                                    <div class="item__info">
+                                        <p class="item__text-name">Áo chống nắng mũ liền chun eo SunStop Cooling</p>
+                                        <p class="item__text-sku">SKU: 2100007870366</p>
+                                        <span class="item__item-size">kích cỡ: size xl | </span><span
+                                            class="item__item-color">màu sắc: be/họa tiết xanh lá</span>
+                                    </div>
+                                    <div class="item__price">1.100.000 đ</div>
+                                    <div class="item__quantity">
+                                        <div class="quantity-wrapt">
+                                            <div class="quantity-prev">-</div>
+                                            <input type="number" class="quantity" value="1" min="1" step="1" disabled>
+                                            <div class="quantity-next">+</div>
+                                        </div>
+                                    </div>
+                                    <div class="item__total">
+                                        <p class="item__total-number">1.100.000 đ</p>
+                                        <div class="bnt__product-close">
+                                            <img class="cart-icon"
+                                                src="images/delete_24dp_1F1F1F_FILL0_wght400_GRAD0_opsz24.png" alt="cart">
+                                            xóa
+                                            <div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="cart__item">
+                            <div class="item__check">
+                                <input type="checkbox" name="product" id="product">
+                            </div>
+                            <div class="item__product">
+                                <img src="images/10004190_b939-212q_v_ng_nh_t_1290__10004188_b917-908q_n_u_1490_3.jpg"
+                                    alt="cart">
+                                <div class="item__text">
+                                    <div class="item__info">
+                                        <p class="item__text-name">Áo chống nắng mũ liền chun eo SunStop Cooling</p>
+                                        <p class="item__text-sku">SKU: 2100007870366</p>
+                                        <span class="item__item-size">kích cỡ: size xl | </span><span
+                                            class="item__item-color">màu sắc: be/họa tiết xanh lá</span>
+                                    </div>
+                                    <div class="item__price">1.100.000 đ</div>
+                                    <div class="item__quantity">
+                                        <div class="quantity-wrapt">
+                                            <div class="quantity-prev">-</div>
+                                            <input type="number" class="quantity" value="1" min="1" step="1" disabled>
+                                            <div class="quantity-next">+</div>
+                                        </div>
+                                    </div>
+                                    <div class="item__total">
+                                        <p class="item__total-number">1.100.000 đ</p>
+                                        <div class="bnt__product-close">
+                                            <img class="cart-icon"
+                                                src="images/delete_24dp_1F1F1F_FILL0_wght400_GRAD0_opsz24.png" alt="cart">
+                                            xóa
+                                            <div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="cart__item">
+                            <div class="item__check">
+                                <input type="checkbox" name="product" id="product">
+                            </div>
+                            <div class="item__product">
+                                <img src="images/10004190_b939-212q_v_ng_nh_t_1290__10004188_b917-908q_n_u_1490_3.jpg"
+                                    alt="cart">
+                                <div class="item__text">
+                                    <div class="item__info">
+                                        <p class="item__text-name">Áo chống nắng mũ liền chun eo SunStop Cooling</p>
+                                        <p class="item__text-sku">SKU: 2100007870366</p>
+                                        <span class="item__item-size">kích cỡ: size xl | </span><span
+                                            class="item__item-color">màu sắc: be/họa tiết xanh lá</span>
+                                    </div>
+                                    <div class="item__price">1.100.000 đ</div>
+                                    <div class="item__quantity">
+                                        <div class="quantity-wrapt">
+                                            <div class="quantity-prev">-</div>
+                                            <input type="number" class="quantity" value="1" min="1" step="1" disabled>
+                                            <div class="quantity-next">+</div>
+                                        </div>
+                                    </div>
+                                    <div class="item__total">
+                                        <p class="item__total-number">1.100.000 đ</p>
+                                        <div class="bnt__product-close">
+                                            <img class="cart-icon"
+                                                src="images/delete_24dp_1F1F1F_FILL0_wght400_GRAD0_opsz24.png" alt="cart">
+                                            xóa
+                                            <div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
                     </div>
-                    <div>
-                        <input type="radio" id="unisex" name="gender" value="unisex" hidden>
-                        <label for="unisex">Unisex</label>
+                </div>
+                <div class="cart__calculate">
+                    <p class="cart__calculate-title">tạm tính</p>
+                    <div class="cart__calculate-provisional">
+                        <p class="provisional">Tạm tính (6 sản phẩm)</p>
+                        <p class="money">4,612,000 đ</p>
                     </div>
-                    <p class="form-note">Để thay đổi thông tin quý khách vui lòng liên hệ bộ phận CSKH</p>
-
-                </div>
-                <div class="form-group password">
-                    <label for="password">Mật khẩu *</label>
-                    <input type="password" id="password" name="password">
-                    <span class="toggle-password active">👁️</span>
-                </div>
-                <div class="form-group password">
-                    <label for="repassword">Nhập lại mật khẩu *</label>
-                    <input type="password" id="repassword" name="repassword">
-                    <span class="toggle-password active">👁️</span>
-                </div>
-                <div class="form-group">
-                    <label for="email">Email</label>
-                    <input type="text" id="email" name="email" placeholder="Nhập email của Quý khách">
-                </div>
-                <div class="form-group">
-                    <label for="job">Nghề nghiệp</label>
-                    <select name="job" id="job">
-                        <option>Văn phòng</option>
-                        <option>Tự do</option>
-                        <option>Thu Ngân</option>
-                        <option>Marketing</option>
-                        <option>Vận tải</option>
-                        <option>Báo chí</option>
-                        <option>Nghệ thuật</option>
-                        <option>Bảo vệ</option>
-                        <option>CNTT</option>
-                        <option>Xuất khẩu lao động</option>
-                        <option>Phát thanh viên</option>
-                        <option>Nghề nghiệp khác</option>
-                    </select>
-                </div>
-                <div class="form-check">
-                    <input type="checkbox" name="isagree" id="isagree">
-                    <label for="isagree">Tôi đồng ý Điều kiện - Điều khoản & Chính sách bảo mật của FORMAT</label>
-                </div>
-                <div class="form-check">
-                    <input type="checkbox" name="isaccept" id="isaccept">
-                    <label for="isaccept">Nhận thông tin và khuyến mãi mới nhất từ FORMAT</label>
-                </div>
-                <button class="full">đăng ký ngay</button>
-                <div class="form-tools">
-                    <div class="form__login">
-                        <p class="form__login-text">Quý khách đã có tài khoản?</p>
-                        <a href="./login.html" class="form__login-link">Đăng nhập ngay</a>
+                    <div class="cart__calculate-discount">
+                        <p class="discount">Tổng giảm giá</p>
+                        <p class="money">- 612,000 đ</p>
                     </div>
+                    <div class="cart__calculate-discount">
+                        <p class="discount">Vận chuyển</p>
+                        <p class="money">- 0 đ</p>
+                    </div>
+                    <div class="cart__calculate-total">
+                        <p class="total">Tổng thanh toán</p>
+                        <p class="money">4,612,000 đ</p>
+                    </div>
+                    <p class="des">* Đã bao gồm VAT</p>
+                    <button class="full">thanh toán ngay</button>
                 </div>
-
-            </form>
+            </div> -->
+            <div class="cart__empty">
+                <img src="./images/cart-empty.png" alt="empty-cart">
+                <p class="cart__empty-text">giỏ hàng hiện đang trống</p>
+                <button>tiếp tục mua sắm</button>
+            </div>
         </section>
         <section class="service pd">
             <div class="container">
@@ -747,7 +849,7 @@
             <li class="menu-item"><a href="./product.html">ƯU ĐÃI</a></li>
             <li class="menu-item"><a href="/store.html">CỬA HÀNG</a></li>
         </ul>
-     
+
         <div class="popup__sub-menu">
             <li><a href="./account.html"><img src="images/person.png">Tài khoản</a></li>
             <li><a href="account.html?tab=wishlist"><img src="images/favorite.png">

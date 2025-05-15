@@ -1,28 +1,28 @@
 .collectionpage {
     .collection {
         .container {
-            .collection__wrapt {
-                padding-bottom: 20px;
-            }
-            .collection__title {
-                padding: 16px 8px 24px;
-                a {
-                    @include text(20px, $font-main, 28px, #000000, uppercase);
-                    text-decoration: none;
-                    margin-bottom: 8px;
-                }
-            }
-            .collection__img {
-                a {
-                    width: 100%;
-                    height: 100%;
-                    display: block;
-                    img {
-                        width: 100%;
-                    }
-                }
-                margin-top: 20px;
-            }
+            // .collection__wrapt {
+            //     padding-bottom: 20px;
+            // }
+            // .collection__title {
+            //     padding: 16px 8px 24px;
+            //     a {
+            //         @include text(20px, $font-main, 28px, #000000, uppercase);
+            //         text-decoration: none;
+            //         margin-bottom: 8px;
+            //     }
+            // }
+            // .collection__img {
+            //     a {
+            //         width: 100%;
+            //         height: 100%;
+            //         display: block;
+            //         img {
+            //             width: 100%;
+            //         }
+            //     }
+            //     margin-top: 20px;
+            // }
         }
     }
 }
