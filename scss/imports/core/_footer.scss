@@ -252,7 +252,7 @@ footer {
     padding: 16px 16px 40px;
     @include visible(0);
     @include transition($t);
-
+    overflow-y: auto;   
     .menu__mobile-close {
         img {
             width: 36px;

@@ -115,6 +115,23 @@ $(document).ready(function () {
         popMenuMobile.removeClass('active')
     })
 
+     // xử lý pupop accoung mobile
+     let btnAccountMobile = $('.btn-open-nav');
+     let btnPrevAccountMobile = $('.account__top-icon')
+     let popAccountMobile = $('.account__nav');
+     let btnCloseAccountMObile = $('.account__top-close');
+     btnAccountMobile.on('click', function () {
+         popAccountMobile.fadeIn();
+     })
+     btnCloseAccountMObile.on('click', function () {
+         popAccountMobile.fadeOut()
+     })
+     btnPrevAccountMobile.on('click', function () {
+        popAccountMobile.fadeOut()
+    })
+
+ 
+
     // xử lý pupop search mobile
     let btnSearchMobile = $('.sub-menu-search');
     let popSearchMobile = $('.popup__search-mobile');
@@ -299,6 +316,9 @@ $(document).ready(function () {
 
         // Hiển thị panel tương ứng với chỉ số
         $('.account__panel').eq(index).show();
+
+        // tắt pop nav mobile
+        popAccountMobile.fadeOut()
     });
 
 

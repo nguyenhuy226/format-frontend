@@ -26,6 +26,10 @@
             .account__nav {
                 width: 340px;
 
+                .cart__top {
+                    display: none;
+                }
+
                 .account__nav-item {
                     width: 100%;
                     border: 1px solid rgba(0, 0, 0, .09);
@@ -173,6 +177,7 @@
                             border: solid 1px $gray-cl;
                             gap: 16px;
                             margin-bottom: 20px;
+
                             .address__content {
                                 .name__address {
                                     display: flex;
@@ -463,9 +468,60 @@
                 display: block;
                 gap: 0px;
                 padding: 16px 10px 0;
-                border-bottom: 1px solid $gray-cl;  
+                border-bottom: 1px solid $gray-cl;
+
                 .account__nav {
+                    z-index: 400;
+                    position: fixed;
+                    top: 0;
+                    left: 0;
+                    width: 100%;
+                    max-width: 100vw;
+                    height: 100vh;
+                    background: $text-white-cl;
+                    padding: 15px 16px;
                     display: none;
+                    overflow-y: auto;
+                    @include customscroll();
+
+                    .account__top {
+                        display: flex;
+                        justify-content: space-between;
+                        margin-bottom: 40px;
+
+                        .account__top-icon {
+                            @include transform(rotate(180deg));
+                            width: 36px;
+                        }
+
+                        .account__top-close {
+                            width: 36px;
+
+                            img {
+                                width: 100%;
+                            }
+                        }
+                    }
+
+                    .account__nav-item {
+                        border: none;
+                        margin-bottom: 40px;
+    
+                        .account__nav-title {
+                            padding: 12px 8px;
+                            @include text(14px, $font-main, 22px, $text-cl, uppercase);
+                            border-bottom: none;
+                        }
+                        
+                        .nav-item {
+                            border-bottom: 1px solid rgba(0, 0, 0, .09);
+                        }
+
+                    }
+                    .white {
+                      display: none;
+                    }
+    
                 }
 
                 .account__panels {
@@ -495,7 +551,7 @@
                         }
 
                         .newsletter {
-                           padding-top: 16px;
+                            padding-top: 16px;
                         }
 
                         &-info {
@@ -674,16 +730,18 @@
 
                         .wishlist__top {
                             flex-direction: column;
-                            gap:12px;
+                            gap: 12px;
+
                             .wishlist__quantity {
                                 @include text(16px, $font-main, 20px, #999999, none);
                                 width: 100%;
                             }
 
-                            .wishlist__tools {  
+                            .wishlist__tools {
                                 width: 100%;
                             }
                         }
+
                         .wishlist__list {
                             .product__item {
                                 button {
